@@ -17,7 +17,7 @@
             --primary: #000000;
             --primary-light: #2a3c31;
             --primary-invert: #ffffff;
-            --text-dark: #0059ff;
+            --text-dark: #183060;
             --text-muted: #000000;
             --bg-body: #ffffff;
             --bg-pill: #f3f5f4;
@@ -469,13 +469,14 @@
 
         /* LEVEL 40: Typewriter Hero H1 */
         h1 {
-            font-size: clamp(4rem, 6.5vw, 7.5rem);
+            font-size: clamp(4rem, 6.5vw, 4.5rem);
             line-height: 1.05;
             letter-spacing: -0.04em;
             color: var(--text-dark);
             font-weight: 700;
             margin-bottom: 2rem;
             min-height: 2.1em;
+            color:#183060
         }
 
         .type-wrap {
@@ -2063,8 +2064,8 @@
             <div class="hero-bg-mesh"></div>
 
             <h1>
-                <span class="type-wrap" id="typewriter">Sustainable Engineering</span><br>
-                for Global Industries
+                <span class="type-wrap" id="typewriter">Global Engineering Excellence</span><br>
+                Skilled Manpower Solutions
             </h1>
 
             <p class="hero-desc">
@@ -2697,10 +2698,7 @@
 
             // 3. Dynamic Typewriter Effect in Hero
             const phrases = [
-                "Engineering Excellence",
-                "Innovative Solutions",
-                "Trusted Expertise",
-                "Sustainable Engineering"
+                "Global Engineering Excellence"
             ];
             const typewriterEl = document.getElementById('typewriter');
             let phraseIndex = 0;
