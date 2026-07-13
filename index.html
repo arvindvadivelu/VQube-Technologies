@@ -244,8 +244,8 @@
         }
 
         .logo-icon {
-            width: 170px;
-            height: 100px;
+            width: 230px;
+            height: 130px;
             color: var(--primary);
         }
 
@@ -469,20 +469,21 @@
 
         /* LEVEL 40: Typewriter Hero H1 */
         h1 {
-            font-size: clamp(4rem, 6.5vw, 4.5rem);
-            line-height: 1.05;
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            line-height: 1.7;
             letter-spacing: -0.04em;
             color: var(--text-dark);
             font-weight: 700;
             margin-bottom: 2rem;
             min-height: 2.1em;
-            color:#183060
+            color: #183060;
         }
 
         .type-wrap {
             display: inline-block;
             position: relative;
-            color: var(--primary);
+            color: #183060;
+            font-size: 3rem;
         }
 
         .type-wrap::after {
@@ -505,16 +506,20 @@
         }
 
         .hero-desc {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 1.6;
             color: var(--text-muted);
-            max-width: 850px;
+            max-width: 1050px;
             margin-bottom: 3.5rem;
+            font-family: "calibri", sans-serif;
+            text-align: justify;
+            text-justify: inter-word;
+            /* Better spacing in supported browsers */
         }
 
         /* Infinite Marquee Banner */
         .marquee-section {
-            background-color: var(--primary);
+            background-color: #183060;
             padding: 1.5rem 0;
             width: 100vw;
             margin-left: calc(-50vw + 50%);
@@ -535,7 +540,7 @@
         .marquee-content span {
             font-size: 1.5rem;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform: none;
             letter-spacing: 2px;
             color: var(--primary-invert);
             margin: 0 2rem;
@@ -546,7 +551,7 @@
 
         .marquee-content span::after {
             content: "✦";
-            color: #0059ff;
+            color: #d10a12;
             font-size: 1.2rem;
         }
 
@@ -637,16 +642,46 @@
             align-items: center;
             text-align: center;
             padding: 1rem 2rem;
-            max-width: 1200px;
+            max-width: 2500px;
             margin: 0 auto;
         }
 
         .about-section h2 {
-            font-size: clamp(3rem, 5vw, 4.5rem);
-            line-height: 1.15;
+            font-size: clamp(1.5rem, 2vw, 2.5rem);
+            line-height: 1.6;
             letter-spacing: -0.04em;
+            font-weight: 350;
+            margin-bottom: 1.5rem;
+            max-width: 1050px;
+            font-family: "Calibri", sans-serif;
+
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
+        }
+
+        .core-values {
+            max-width: 1050px;
+            margin: 1rem 0 3rem;
+            padding-left: 1.5rem;
+            font-family: "Calibri", sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        .core-values li {
+            margin-bottom: 0.8rem;
+        }
+
+        .core-values li:last-child {
+            margin-bottom: 0;
+        }
+
+        .core-values strong {
+            color: var(--text-primary);
             font-weight: 600;
-            margin-bottom: 3.5rem;
         }
 
         .text-dark {
@@ -2069,28 +2104,19 @@
             </h1>
 
             <p class="hero-desc">
-                We empower industries with innovative engineering solutions, technical excellence, and
-                trusted expertise. Building smarter designs for a stronger, more sustainable future.
+                VQube Technologies provides specialised engineering consulting and integrated project management
+                services for the cement, mineral, mining, Food and Oil & Gas industries. With strong multi-disciplinary
+                engineering expertise, we support clients across the entire project lifecycle. Our focus is on
+                delivering technically sound, cost-effective, and sustainable solutions that transform project concepts
+                into successful operating facilities.
             </p>
-            <p class="hero-desc">
-                Innovative engineering solutions powered by technical excellence and trusted expertise.
-            </p>
-
-            <button class="cta-button modal-trigger magnetic-btn">
-                <span>Book my free consultation</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </button>
         </section>
 
         <div class="marquee-section reveal">
             <div class="marquee-content">
                 <span>Vector</span><span>Vision</span><span>Value</span><span>Vector
                 </span><span>Vision</span><span>Value</span><span>Vector</span><span>Vision</span><span>Value</span>
-                <span>Vector</span><span>Vision</span><span>Value</span>
-
+                <span>Vector</span><span>Vision</span><span>Value</span><span>Vector</span><span>Vision</span><span>Value</span>
             </div>
         </div>
 
@@ -2120,17 +2146,63 @@
         <section id="about" class="about-section reveal">
             <div class="pill">About</div>
             <h2>
-                <span class="text-muted-large">We're a small team of passionate</span><br>
-                <span class="text-dark">carbon experts helping forward-thinking<br>companies</span>
-                <span class="text-muted-large">prepare for the future.</span>
+                <span class="text-muted-large"><b>VQube Technologies [VQT] </b> is a professionally managed engineering
+                    consultancy providing comprehensive engineering design, technical advisory, project management, and
+                    multi-disciplinary engineering services to process and manufacturing industries. Backed by
+                    experienced professionals with extensive global project execution expertise, we deliver innovative,
+                    reliable, and technically optimised solutions across the entire engineering value chain from
+                    Feasibility studies, Conceptual and Detailed engineering, to procurement support, construction
+                    management, commissioning, and operational excellence.
+                    Skilled Manpower Deputation: Provision of qualified engineering and technical professionals for
+                    short-term and long-term project assignments, ensuring seamless project execution and operational
+                    support.
+                    Technical Recruitment Services: End-to-end recruitment solutions for engineering, technical, and
+                    project professionals, enabling organisations to acquire the right talent efficiently and
+                    effectively.</span>
+            </h2>
+            <h2>
+                <span class="text-muted-large"><b>Skilled Manpower Deputation :</b> Provision of qualified engineering
+                    and technical professionals for short-term and long-term project assignments, ensuring seamless
+                    project execution and operational support. </span>
+            </h2>
+            <h2>
+                <span class="text-muted-large"><b>Technical Recruitment Services : </b>End-to-end recruitment solutions
+                    for engineering, technical, and project professionals, enabling organisations to acquire the right
+                    talent efficiently and effectively. </span>
             </h2>
 
             <div class="pill">Vision</div>
             <h2>
-                <span class="text-muted-large">Delivering innovative engineering</span><br>
-                <span class="text-dark">solutions with technical excellence<br>and trusted expertise</span>
-                <span class="text-muted-large">for industries worldwide.</span>
+                <span class="text-muted-large">To be a globally recognised engineering solutions partner, empowering
+                    industries through innovative design, technical excellence, and trusted expertise while delivering
+                    sustainable value to our clients worldwide.</span>
             </h2>
+
+            <div class="pill">Mission</div>
+            <h2>
+                <span class="text-muted-large">Connecting Global Industries with Superlative Design & Engineering
+                    Solutions through Technical Excellence and Trusted Expertise.</span>
+            </h2>
+
+
+            <div class="pill">Core Values</div>
+
+            <h2>
+                <span class="text-muted-large">
+                    Connecting Global Industries with Superlative Design &amp; Engineering Solutions through Technical
+                    Excellence and Trusted Expertise.
+                </span>
+            </h2>
+
+            <ul class="core-values">
+                <li><strong>Integrity</strong> – Building trust through honesty and accountability.</li>
+                <li><strong>Technical Excellence</strong> – Delivering high-quality engineering solutions.</li>
+                <li><strong>Innovation</strong> – Continuously improving through creativity and technology.</li>
+                <li><strong>Customer Focus</strong> – Understanding client needs and delivering value.</li>
+                <li><strong>Collaboration</strong> – Working together for successful project outcomes.</li>
+                <li><strong>Safety &amp; Sustainability</strong> – Promoting responsible and sustainable engineering
+                    practices.</li>
+            </ul>
 
 
             <button class="cta-button magnetic-btn"
