@@ -2018,6 +2018,88 @@
                 font-size: 3.5rem;
             }
         }
+
+        /* Service Cards Dialog Box Styles */
+        .service-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 999999;
+            /* Forces it to the very top */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .service-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .service-modal-content {
+            background: var(--bg-body);
+            width: 90%;
+            max-width: 800px;
+            max-height: 85vh;
+            overflow-y: auto;
+            /* Allows scrolling inside the modal box */
+            padding: 3.5rem;
+            border-radius: 32px;
+            position: relative;
+            transform: translateY(40px) scale(0.95);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-light);
+        }
+
+        .service-modal-overlay.active .service-modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .service-modal-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--bg-pill);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .service-modal-close:hover {
+            background: var(--primary);
+            color: var(--primary-invert);
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        /* Custom Scrollbar for Modal content */
+        .service-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .service-modal-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .service-modal-content::-webkit-scrollbar-thumb {
+            background: var(--border-light);
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -2215,34 +2297,33 @@
                 </div>
 
                 <div class="services-right">
-                    <div class="service-card tilt-card">
+                    <div class="service-card tilt-card" onclick="openServiceModal('modal-1')">
                         <div class="service-card-inner">
-                            <img src="CEMENTPLANT.png"
-                                alt="Desert winding road aerial view" loading="lazy">
+                            <img src="CEMENTPLANT.png" alt="Cement Plant" loading="lazy">
                             <h3>Engineering & Project Development</h3>
                             <p>Measure your emissions with clarity—laying the foundation for smarter action.</p>
                         </div>
                     </div>
-                    <div class="service-card tilt-card">
+
+                    <div class="service-card tilt-card" onclick="openServiceModal('modal-2')">
                         <div class="service-card-inner">
-                            <img src="MINE.png"
-                                alt="Desert winding road aerial view" loading="lazy">
+                            <img src="MINE.png" alt="Mining" loading="lazy">
                             <h3>Mining & Mineral Processing Engineering Services</h3>
                             <p>Measure your emissions with clarity—laying the foundation for smarter action.</p>
                         </div>
                     </div>
-                    <div class="service-card tilt-card">
+
+                    <div class="service-card tilt-card" onclick="openServiceModal('modal-3')">
                         <div class="service-card-inner">
-                            <img src="OIL.png"
-                                alt="Desert winding road aerial view" loading="lazy">
+                            <img src="OIL.png" alt="Oil & Gas" loading="lazy">
                             <h3>Oil & Gas - Upstream and Downstream</h3>
                             <p>Measure your emissions with clarity—laying the foundation for smarter action.</p>
                         </div>
                     </div>
-                    <div class="service-card tilt-card">
+
+                    <div class="service-card tilt-card" onclick="openServiceModal('modal-4')">
                         <div class="service-card-inner">
-                            <img src="MANPOWER.png"
-                                alt="Desert winding road aerial view" loading="lazy">
+                            <img src="MANPOWER.png" alt="Manpower" loading="lazy">
                             <h3>Engineering Manpower Deputation & Recruitment Services</h3>
                             <p>Measure your emissions with clarity—laying the foundation for smarter action.</p>
                         </div>
@@ -2541,7 +2622,78 @@
                 </div>
             </div>
         </section>
+        <div id="modal-1" class="service-modal-overlay" onclick="closeOnOutsideClick(event, 'modal-1')">
+            <div class="service-modal-content">
+                <button class="service-modal-close" onclick="closeServiceModal('modal-1')">&times;</button>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; padding-right: 2rem;">Engineering & Project
+                    Development
+                </h2>
+                <img src="CEMENTPLANT.png" alt="Cement Plant"
+                    style="width:100%; height:300px; object-fit:cover; border-radius:16px; margin-bottom: 1.5rem;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-muted);">This is dummy content for
+                    the
+                    Engineering & Project Development service. Here you can add detailed descriptions about your
+                    feasibility
+                    studies, conceptual engineering, detailed design, and project management capabilities specific to
+                    the
+                    cement industry.</p>
+                <p style="font-size: 1.2rem; color: var(--text-muted);">Our team ensures technically sound and
+                    cost-effective solutions tailored to your operational needs, transforming project concepts into
+                    successful operating facilities.</p>
+            </div>
+        </div>
 
+        <div id="modal-2" class="service-modal-overlay" onclick="closeOnOutsideClick(event, 'modal-2')">
+            <div class="service-modal-content">
+                <button class="service-modal-close" onclick="closeServiceModal('modal-2')">&times;</button>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; padding-right: 2rem;">Mining & Mineral Processing
+                    Engineering Services</h2>
+                <img src="MINE.png" alt="Mining"
+                    style="width:100%; height:300px; object-fit:cover; border-radius:16px; margin-bottom: 1.5rem;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-muted);">This is dummy content for
+                    Mining & Mineral Processing Engineering Services. Expand on your comprehensive multi-disciplinary
+                    engineering expertise that supports clients across the entire project lifecycle in the mining
+                    sector.
+                </p>
+                <p style="font-size: 1.2rem; color: var(--text-muted);">We focus on delivering sustainable and efficient
+                    processing facility designs that maximize yield and prioritize workplace safety.</p>
+            </div>
+        </div>
+
+        <div id="modal-3" class="service-modal-overlay" onclick="closeOnOutsideClick(event, 'modal-3')">
+            <div class="service-modal-content">
+                <button class="service-modal-close" onclick="closeServiceModal('modal-3')">&times;</button>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; padding-right: 2rem;">Oil & Gas - Upstream and
+                    Downstream
+                </h2>
+                <img src="OIL.png" alt="Oil and Gas"
+                    style="width:100%; height:300px; object-fit:cover; border-radius:16px; margin-bottom: 1.5rem;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-muted);">This is dummy content for
+                    the
+                    Oil & Gas services. Detail your specific offerings for both upstream and downstream operations,
+                    including integrated project management, safety compliance, and technological integration.</p>
+                <p style="font-size: 1.2rem; color: var(--text-muted);">From wellhead to refinery, our engineering
+                    consultants provide actionable strategies to future-proof your fossil fuel operations.</p>
+            </div>
+        </div>
+
+        <div id="modal-4" class="service-modal-overlay" onclick="closeOnOutsideClick(event, 'modal-4')">
+            <div class="service-modal-content">
+                <button class="service-modal-close" onclick="closeServiceModal('modal-4')">&times;</button>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; padding-right: 2rem;">Engineering Manpower Deputation
+                    &
+                    Recruitment</h2>
+                <img src="MANPOWER.png" alt="Manpower"
+                    style="width:100%; height:300px; object-fit:cover; border-radius:16px; margin-bottom: 1.5rem;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text-muted);">This is dummy content for
+                    Manpower Deputation & Recruitment Services. Explain how you provide qualified engineering and
+                    technical
+                    professionals for short-term and long-term project assignments.</p>
+                <p style="font-size: 1.2rem; color: var(--text-muted);">We seamlessly integrate top-tier engineering
+                    talent
+                    into your existing operations to ensure flawless project execution and operational support.</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -2878,6 +3030,33 @@
             const isActive = element.classList.contains('active');
             document.querySelectorAll('.faq-item').forEach(item => { item.classList.remove('active'); });
             if (!isActive) element.classList.add('active');
+        }
+
+
+        // Service Card Modal Logic
+        function openServiceModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                // Prevent background from scrolling while modal is open
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeServiceModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                // Restore background scrolling when closed
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Allows user to click the dark background outside the box to close it
+        function closeOnOutsideClick(event, modalId) {
+            if (event.target.id === modalId) {
+                closeServiceModal(modalId);
+            }
         }
     </script>
 </body>
