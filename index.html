@@ -2948,12 +2948,6 @@
             const currentTheme = localStorage.getItem('theme') ||
                 (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
-            if (currentTheme === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                moonIcon.style.display = 'none';
-                sunIcon.style.display = 'block';
-            }
-
             themeToggle.addEventListener('click', () => {
                 let theme = document.documentElement.getAttribute('data-theme');
                 if (theme === 'dark') {
