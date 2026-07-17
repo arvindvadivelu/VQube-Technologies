@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Homepage -->
     <url>
         <loc>https://vqubetechnologies.com/</loc>
         <lastmod>2026-07-15</lastmod>
@@ -9,6 +9,7 @@
         <priority>1.0</priority>
     </url>
 
+    <!-- Contact Page -->
     <url>
         <loc>https://vqubetechnologies.com/contact</loc>
         <lastmod>2026-07-15</lastmod>
@@ -16,6 +17,7 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- Privacy Policy -->
     <url>
         <loc>https://vqubetechnologies.com/privacy</loc>
         <lastmod>2026-07-15</lastmod>
@@ -23,8 +25,9 @@
         <priority>0.5</priority>
     </url>
 
+    <!-- Terms and Conditions -->
     <url>
-        <loc>https://vqubetechnologies.com/term</loc>
+        <loc>https://vqubetechnologies.com/terms</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
