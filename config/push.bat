@@ -1,7 +1,7 @@
 @echo off
-title Blog Deployment Pipeline
+title VQube Development Deployment Pipeline
 echo ===================================================
-echo   Initiating Deployment to GitHub...
+echo   Initiating Deployment to GitHub (development)...
 echo ===================================================
 echo.
 
@@ -15,22 +15,22 @@ echo [OK] Changes staged.
 
 echo.
 :: Prompt for a commit message
-set /p commitMsg="Enter commit message (Press Enter for 'Auto-update blog content'): "
+set /p commitMsg="Enter commit message (Press Enter for 'Update website and assets'): "
 
 :: Apply default message if left blank
-if "%commitMsg%"=="" set commitMsg=Auto-update blog content
+if "%commitMsg%"=="" set commitMsg=Update website and assets
 
 :: Commit the changes
 git commit -m "%commitMsg%"
 echo [OK] Changes committed.
 
 echo.
-:: Push to the main branch
-git push origin main
-echo [OK] Changes pushed to remote repository.
+:: Push to the development branch
+git push origin development
+echo [OK] Changes pushed to remote development branch.
 
 echo.
 echo ===================================================
-echo   Deployment Complete! 
+echo   Development Deployment Complete! 
 echo ===================================================
 pause
