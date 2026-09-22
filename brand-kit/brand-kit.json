@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "brand": {
+    "name": "VQube Technologies",
+    "tagline": "Engineering Excellence & Man Power Solutions",
+    "website": "https://vqubetechnologies.com",
+    "version": "1.0.0"
+  },
+  "colors": {
+    "primary": {
+      "obsidian": {
+        "hex": "#06090E",
+        "rgb": "rgb(6, 9, 14)",
+        "rgba": "rgba(6, 9, 14, 1)",
+        "description": "Deep obsidian base - ideal for video background, dark overlays, and title card backdrops"
+      },
+      "darkSlate": {
+        "hex": "#121D17",
+        "rgb": "rgb(18, 29, 23)",
+        "rgba": "rgba(18, 29, 23, 1)",
+        "description": "Rich dark green-slate - used for lower-third cards and badges"
+      },
+      "forestSage": {
+        "hex": "#2A3C31",
+        "rgb": "rgb(42, 60, 49)",
+        "rgba": "rgba(42, 60, 49, 1)",
+        "description": "Industrial brand sage green"
+      },
+      "sageMuted": {
+        "hex": "#83968B",
+        "rgb": "rgb(131, 150, 139)",
+        "rgba": "rgba(131, 150, 139, 1)",
+        "description": "Muted sage accent - borders, icons, secondary labels"
+      },
+      "sageLight": {
+        "hex": "#A4B4AB",
+        "rgb": "rgb(164, 180, 171)",
+        "rgba": "rgba(164, 180, 171, 1)",
+        "description": "Light sage accent for high-visibility highlights on dark video backgrounds"
+      }
+    },
+    "accents": {
+      "electricCyan": {
+        "hex": "#00E5FF",
+        "rgb": "rgb(0, 229, 255)",
+        "rgba": "rgba(0, 229, 255, 1)",
+        "description": "Vibrant neon cyan - callouts, key video stat highlights, glow effects, progress bars"
+      },
+      "electricBlue": {
+        "hex": "#0D00FF",
+        "rgb": "rgb(13, 0, 255)",
+        "rgba": "rgba(13, 0, 255, 1)",
+        "description": "High-tech electric blue for ambient mesh gradients"
+      },
+      "deepNavy": {
+        "hex": "#183060",
+        "rgb": "rgb(24, 48, 96)",
+        "rgba": "rgba(24, 48, 96, 1)",
+        "description": "Executive navy - typography and contrast blocks"
+      }
+    },
+    "neutrals": {
+      "white": {
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "rgba": "rgba(255, 255, 255, 1)",
+        "description": "Pure white for primary video text, watermarks, and high-contrast captions"
+      },
+      "textLight": {
+        "hex": "#F0F4F2",
+        "rgb": "rgb(240, 244, 242)",
+        "rgba": "rgba(240, 244, 242, 1)",
+        "description": "Off-white body text for dark video scenes"
+      },
+      "textMuted": {
+        "hex": "#A0A6A3",
+        "rgb": "rgb(160, 166, 163)",
+        "rgba": "rgba(160, 166, 163, 1)",
+        "description": "Muted subtitles, timecodes, metadata labels"
+      },
+      "textDark": {
+        "hex": "#183060",
+        "rgb": "rgb(24, 48, 96)",
+        "rgba": "rgba(24, 48, 96, 1)",
+        "description": "Dark text for light video lower-thirds or slide transitions"
+      },
+      "cardDark": {
+        "hex": "#121915",
+        "rgb": "rgb(18, 25, 21)",
+        "rgba": "rgba(18, 25, 21, 0.85)",
+        "description": "Glassmorphism card background for video overlays"
+      },
+      "cardLight": {
+        "hex": "#F6F8F7",
+        "rgb": "rgb(246, 248, 247)",
+        "rgba": "rgba(246, 248, 247, 0.95)",
+        "description": "Light card background"
+      },
+      "borderDark": {
+        "hex": "#23302A",
+        "rgb": "rgb(35, 48, 42)",
+        "rgba": "rgba(35, 48, 42, 0.6)",
+        "description": "Subtle border stroke for lower-third cards and popups"
+      },
+      "borderLight": {
+        "hex": "#E5E7EB",
+        "rgb": "rgb(229, 231, 235)",
+        "rgba": "rgba(229, 231, 235, 1)",
+        "description": "Light border stroke"
+      }
+    },
+    "gradients": {
+      "brandGlow": "linear-gradient(135deg, #00E5FF 0%, #0D00FF 100%)",
+      "darkCard": "linear-gradient(145deg, rgba(18, 29, 23, 0.9) 0%, rgba(6, 9, 14, 0.95) 100%)",
+      "sageMesh": "radial-gradient(circle at top left, rgba(131, 150, 139, 0.25) 0%, transparent 60%)",
+      "cyanMesh": "radial-gradient(circle at bottom right, rgba(0, 229, 255, 0.2) 0%, transparent 60%)",
+      "goldAccent": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "Space Grotesk",
+        "category": "sans-serif",
+        "fallback": "'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "weights": [400, 500, 600, 700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap",
+        "recommendedUsage": "Video main titles, chapter headers, large metric callouts, intro hooks"
+      },
+      "body": {
+        "family": "Plus Jakarta Sans",
+        "category": "sans-serif",
+        "fallback": "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "weights": [400, 500, 600, 700, 800],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+        "recommendedUsage": "Video subtitles, speaker names in lower-thirds, bullet points, narrative voiceover sync"
+      },
+      "accent": {
+        "family": "Instrument Serif",
+        "category": "serif",
+        "fallback": "'Instrument Serif', Georgia, 'Times New Roman', serif",
+        "weights": [400],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap",
+        "recommendedUsage": "Luxury quotes, testimonial callouts, cinematic emphasis words"
+      },
+      "monospace": {
+        "family": "JetBrains Mono",
+        "category": "monospace",
+        "fallback": "'JetBrains Mono', 'Space Mono', Consolas, Monaco, monospace",
+        "weights": [400, 500, 700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap",
+        "recommendedUsage": "Engineering technical specs, timecodes, live timestamps, code/FEA data readouts"
+      }
+    },
+    "videoScale": {
+      "1080p": {
+        "mainTitle": "64px",
+        "subtitle": "32px",
+        "speakerName": "28px",
+        "speakerTitle": "18px",
+        "captions": "26px",
+        "badge": "16px",
+        "timestamp": "14px"
+      },
+      "4k": {
+        "mainTitle": "128px",
+        "subtitle": "64px",
+        "speakerName": "56px",
+        "speakerTitle": "36px",
+        "captions": "52px",
+        "badge": "32px",
+        "timestamp": "28px"
+      },
+      "shorts_reels_9x16": {
+        "mainTitle": "52px",
+        "subtitle": "28px",
+        "captions": "34px",
+        "badge": "18px"
+      }
+    }
+  },
+  "videoPresets": {
+    "lowerThird": {
+      "backgroundColor": "rgba(6, 9, 14, 0.88)",
+      "backdropBlur": "16px",
+      "borderColor": "rgba(131, 150, 139, 0.3)",
+      "accentBarColor": "#00E5FF",
+      "nameFont": "Space Grotesk",
+      "nameWeight": "700",
+      "nameColor": "#FFFFFF",
+      "titleFont": "Plus Jakarta Sans",
+      "titleWeight": "500",
+      "titleColor": "#83968B",
+      "borderRadius": "12px",
+      "padding": "16px 24px"
+    },
+    "watermark": {
+      "position": "top-right",
+      "margin": "40px",
+      "opacity": 0.85,
+      "maxHeight": "48px",
+      "recommendedAsset": "White Log.png"
+    },
+    "captions": {
+      "fontFamily": "Plus Jakarta Sans",
+      "fontWeight": "700",
+      "textColor": "#FFFFFF",
+      "highlightColor": "#00E5FF",
+      "backgroundColor": "rgba(6, 9, 14, 0.75)",
+      "padding": "8px 16px",
+      "borderRadius": "8px",
+      "textShadow": "0 2px 8px rgba(0, 0, 0, 0.8)"
+    },
+    "calloutCard": {
+      "background": "linear-gradient(145deg, rgba(18, 29, 23, 0.95) 0%, rgba(6, 9, 14, 0.98) 100%)",
+      "border": "1px solid rgba(0, 229, 255, 0.3)",
+      "boxShadow": "0 12px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 229, 255, 0.15)",
+      "borderRadius": "16px"
+    }
+  },
+  "assets": {
+    "logoMain": "Logo_with_Name_-removebg-preview.png",
+    "logoWhite": "White Log.png",
+    "favicon": "favicon.png",
+    "qrCode": "QR.png"
+  }
+}

@@ -4,32 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | VQube Technologies</title>
-    <link rel="icon" type="image/png" sizes="48x48" href="https://vqubetechnologies.com/favicon.png">
+    <title>Contact Us | VQube Technologies</title>
+    <meta name="description"
+        content="Connect with VQube Technologies for plant engineering design, CFD/FEA simulation, technical advisory, and global manpower deputation.">
+    <link rel="canonical" href="https://vqubetechnologies.com/Contact.html">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta name="google-site-verification" content="UjUvLcccm39CE4ogamNlrHq7Br2Hi_0nYerJtaWcnc4" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="canonical" href="https://vqubetechnologies.com/contact">
 
     <style>
-        /* Shared Theme Variables */
+        /* ==========================================================================
+           COHERE 2026 DESIGN SYSTEM TOKENS (cohere-DESIGN.md)
+           ========================================================================== */
         :root {
-            --primary: #000000;
-            --primary-light: #2a3c31;
-            --primary-invert: #ffffff;
-            --text-dark: #183060;
-            --text-muted: #111827;
-            --bg-body: #f4f6fc;
-            --bg-pill: #f3f5f4;
-            --bg-card: #ffffff;
-            --btn-shadow: rgba(0, 0, 0, 0.15);
-            --border-light: #e5e7eb;
-            --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            --mesh-color-1: rgba(79, 70, 229, 0.15);
-            --mesh-color-2: rgba(46, 125, 50, 0.05);
-            --success-color: #10b981;
+            --color-primary: #17171c;
+            --color-cohere-black: #000000;
+            --color-ink: #212121;
+            --color-deep-green: #003c33;
+            --color-canvas: #ffffff;
+            --color-soft-stone: #eeece7;
+            --color-hairline: #d9d9dd;
+            --color-border-light: #e5e7eb;
+            --color-card-border: #f2f2f2;
+            --color-muted: #93939f;
+            --color-slate: #75758a;
+            --color-body-muted: #616161;
+            --color-action-blue: #1863dc;
+            --color-coral: #ff7759;
+            --color-coral-soft: #ffad9b;
+            --color-on-dark: #ffffff;
+
+            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+
+            --radius-xs: 4px;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 22px;
+            --radius-pill: 32px;
+            --radius-full: 9999px;
+
+            --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -37,847 +58,715 @@
             padding: 0;
             box-sizing: border-box;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        html {
-            font-size: 16px;
         }
 
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-dark);
-            height: 100vh;
-            /* Force NO scrolling on Desktop */
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: background-color 0.5s ease, color 0.5s ease;
+            font-family: var(--font-body);
+            background-color: var(--color-canvas);
+            color: var(--color-ink);
+            line-height: 1.5;
+            font-size: 16px;
+            overflow-x: hidden;
         }
 
-        /* Cinematic Noise Overlay */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            pointer-events: none;
-            z-index: 99998;
-            opacity: 0.03;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        }
-
-        /* Mesh Background */
-        .hero-bg-mesh {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background:
-                radial-gradient(circle at 15% 50%, var(--mesh-color-1) 0%, transparent 60%),
-                radial-gradient(circle at 85% 30%, var(--mesh-color-2) 0%, transparent 50%);
-            filter: blur(60px);
-            animation: mesh-breathe 12s ease-in-out infinite alternate;
-            pointer-events: none;
-        }
-
-        @keyframes mesh-breathe {
-            0% {
-                transform: scale(1);
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: scale(1.1);
-                opacity: 1;
-            }
-        }
-
-        /* Header Styles */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 4%;
-            z-index: 999;
-            background-color: transparent;
-            height: 5.5rem;
-            /* Fixed height for calculations */
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--primary);
+        a {
+            color: inherit;
             text-decoration: none;
-            font-size: 1.75rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
+            transition: color var(--transition-fast);
         }
 
-        .logo-icon {
-            width: 110px;
-            height: 50px;
-            color: var(--primary);
-            border-radius: 8px;
-            background: var(--bg-body);
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
-        /* CTA Button */
-        .cta-button {
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Top Announcement Bar */
+        .announcement-bar {
+            background: var(--color-cohere-black);
+            color: var(--color-on-dark);
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            padding: 0 20px;
+        }
+
+        .announcement-bar a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+
+        /* Nav */
+        header.site-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-hairline);
+            z-index: 1000;
+        }
+
+        .nav-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .brand-logo img {
+            height: 42px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links-center {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links-center a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-ink);
+        }
+
+        .nav-links-center a:hover {
+            color: var(--color-action-blue);
+        }
+
+        .btn-primary {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background-color: var(--primary);
-            color: var(--primary-invert);
-            padding: 0.6rem 1.25rem;
-            border-radius: 999px;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 600;
-            box-shadow: 0 4px 12px var(--btn-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            z-index: 10;
-            overflow: hidden;
+            justify-content: center;
+            gap: 10px;
+            background: var(--color-primary);
+            color: #ffffff;
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--color-primary);
             cursor: pointer;
-            border: none;
-            will-change: transform;
+            transition: all var(--transition-fast);
         }
 
-        .cta-button:hover {
-            box-shadow: 0 8px 20px var(--btn-shadow);
+        .btn-primary:hover {
+            background: var(--color-cohere-black);
+            transform: translateY(-1px);
         }
 
-        /* BENTO BOX LAYOUT */
-        .contact-container {
-            margin-top: 5.5rem;
-            /* Push below header */
-            height: calc(100vh - 7rem);
-            /* Exact height to prevent scrolling */
-            padding: 0 4% 1.5rem;
+        .taxonomy-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--color-coral);
+            border: 1px solid var(--color-coral-soft);
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .mono-tag {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--color-slate);
+            text-transform: uppercase;
+        }
+
+        /* Contact Main Content */
+        .contact-section {
+            padding: 72px 0 96px;
+        }
+
+        .contact-hero-wrap {
+            max-width: 800px;
+            margin-bottom: 56px;
+        }
+
+        .contact-hero-wrap h1 {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 5.5vw, 68px);
+            font-weight: 400;
+            line-height: 1.0;
+            letter-spacing: -1.44px;
+            color: var(--color-primary);
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+
+        .contact-hero-wrap p {
+            font-size: 18px;
+            color: var(--color-body-muted);
+            line-height: 1.6;
+        }
+
+        /* Bento Grid */
+        .contact-bento-grid {
             display: grid;
-            grid-template-columns: 1fr 1.8fr;
-            gap: 1.5rem;
-            max-width: 1600px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 32px;
+            align-items: start;
         }
 
-        .bento-card {
-            background-color: var(--bg-card);
-            border-radius: 32px;
-            border: 1px solid var(--border-light);
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
-        }
-
-        .bento-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* Profile Card (Left) */
-        .profile-card {
+        /* Left Column: Leadership & QR */
+        .left-col {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            padding: 2.5rem;
-            height: 75%;
-            /* Fill the grid exactly */
+            gap: 24px;
         }
 
-        .profile-card img {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .leader-card {
+            background: var(--color-soft-stone);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--color-border-light);
+            height: 480px;
+        }
+
+        .leader-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: top center;
-            z-index: 0;
         }
 
-        .profile-overlay {
+        .leader-overlay {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 45%;
-            background: linear-gradient(to top, var(--bg-card) 20%, rgba(255, 255, 255, 0.8) 45%, transparent 100%);
-            z-index: 1;
+            background: linear-gradient(to top, rgba(23, 23, 28, 0.95) 0%, rgba(23, 23, 28, 0.6) 60%, transparent 100%);
+            padding: 32px 28px 24px;
+            color: #ffffff;
         }
 
-        .profile-info {
-            position: relative;
-            z-index: 2;
-            text-align: left;
-        }
-
-        .profile-info h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            line-height: 1.1;
-            margin-bottom: 0.3rem;
-            letter-spacing: -0.02em;
-            font-family: "Calibri", sans-serif;
-        }
-
-        .profile-info p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
+        .leader-overlay h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
             font-weight: 500;
-            opacity: 0.9;
-            font-family: "Calibri", sans-serif;
+            letter-spacing: -0.3px;
+            margin-bottom: 4px;
         }
 
-        /* Dynamic Panel Container - Uses Grid stacking to preserve strict layout dimensions */
-        .dynamic-panel {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            height: 100%;
+        .leader-overlay p {
+            font-size: 14px;
+            color: var(--color-coral-soft);
+            font-weight: 500;
         }
 
-        /* Both views occupy the same grid cell so parent size NEVER changes */
-        .right-grid,
-        .form-wrapper {
-            grid-column: 1;
-            grid-row: 1;
-            height: 100%;
-            width: 100%;
-        }
-
-        /* Right Grid (Default Content) */
-        .right-grid {
-            display: grid;
-            grid-template-rows: minmax(0, 1.2fr) minmax(0, 1fr);
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            transition: opacity 0.4s ease, transform 0.4s ease;
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: all;
-            z-index: 2;
-        }
-
-        .right-grid.fade-out {
-            opacity: 0;
-            transform: translateY(-20px);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        /* Form Container */
-        .form-wrapper {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.4s ease, transform 0.4s ease;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .form-wrapper.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: all;
-            z-index: 3;
-        }
-
-        .form-card {
-            width: 100%;
-            height: 100%;
-            padding: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .form-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-header h2 {
-            font-size: 2.2rem;
-            letter-spacing: -0.03em;
-            color: var(--text-dark);
-            font-family: "Calibri", sans-serif;
-        }
-
-        .back-btn {
-            background: transparent;
-            border: none;
-            color: var(--text-muted);
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
+        .qr-card-cohere {
+            background: var(--color-soft-stone);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            border: 1px solid var(--color-border-light);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: color 0.3s ease;
+            gap: 24px;
         }
 
-        .back-btn:hover {
-            color: var(--primary);
+        .qr-img-box {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-hairline);
+            flex-shrink: 0;
         }
 
-        /* Form Styling */
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 0.9rem 1.25rem;
-            border-radius: 16px;
-            border: 1.5px solid var(--border-light);
-            background: var(--bg-body);
-            font-family: inherit;
-            font-size: 1rem;
-            color: var(--text-dark);
-            transition: var(--transition-smooth);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
-            background: var(--bg-card);
-        }
-
-        textarea.form-control {
-            resize: none;
+        .qr-img-box img {
+            width: 90px;
             height: 90px;
         }
 
-        .submit-btn {
-            margin-top: 0.5rem;
-            padding: 1rem;
-            font-size: 1.1rem;
-            display: flex;
-            justify-content: center;
-            width: 100%;
+        .qr-text h4 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 4px;
         }
 
-        /* Success Overlay */
-        .success-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
-            z-index: 10;
-        }
-
-        .success-overlay.active {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        .success-icon {
-            width: 60px;
-            height: 60px;
-            color: var(--success-color);
-            margin-bottom: 1rem;
-            animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        .success-overlay h3 {
-            font-size: 2rem;
-            color: var(--text-dark);
-            margin-bottom: 0.5rem;
-            font-family: "Calibri", sans-serif;
-        }
-
-        .success-overlay p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            font-family: "Calibri", sans-serif;
-        }
-
-        @keyframes scaleIn {
-            0% {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        /* Main Greeting Card */
-        .greeting-card {
-            grid-column: span 2;
-            padding: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .greeting-card h2 {
-            font-size: clamp(2.2rem, 3.5vw, 3.8rem);
-            line-height: 1.05;
-            letter-spacing: -0.03em;
-            margin-bottom: 1rem;
-            font-family: "Calibri", sans-serif;
-        }
-
-        .greeting-card p {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            max-width: 95%;
+        .qr-text p {
+            font-size: 13px;
+            color: var(--color-body-muted);
             line-height: 1.5;
-            margin-bottom: 1.5rem;
-            font-family: "Calibri", sans-serif;
         }
 
-        .action-buttons {
+        /* Right Column: Interactive Form & Direct Links */
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .direct-connect-card {
+            background: var(--color-soft-stone);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            border: 1px solid var(--color-border-light);
+        }
+
+        .direct-connect-card h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.2px;
+        }
+
+        .direct-links-row {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 16px;
             flex-wrap: wrap;
+            margin-bottom: 20px;
         }
 
-        .book-btn {
-            padding: 0.8rem 1.75rem;
-            font-size: 1.05rem;
-        }
-
-        /* Direct Mail Link - UPDATED to force web Gmail */
-        .email-link {
+        .direct-link-item {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .email-link:hover {
-            transform: translateX(5px);
-        }
-
-        /* Socials Card */
-        .socials-card {
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .socials-card h3 {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 1.25rem;
-            font-weight: 600;
-            font-family: "Calibri", sans-serif;
-        }
-
-        /* Compact Social Grid */
-        .social-grid {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .social-btn {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: 14px;
-            width: 7.5rem;
-            height: 7.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            text-decoration: none;
-            transition: var(--transition-smooth);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-        }
-
-        .social-btn:hover {
-            background: var(--primary);
-            color: var(--primary-invert);
-            transform: scale(1.05);
-            border-color: var(--primary);
-        }
-
-        .social-btn svg {
-            width: 22px;
-            height: 22px;
-        }
-
-        /* QR Code Card */
-        .qr-card {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: var(--primary);
-            color: var(--primary-invert);
-        }
-
-        .qr-container {
+            gap: 8px;
             background: #ffffff;
-            padding: 1rem;
-            border-radius: 20px;
-            margin-bottom: 1rem;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            transition: transform 0.4s;
+            border: 1px solid var(--color-hairline);
+            padding: 10px 18px;
+            border-radius: var(--radius-pill);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-primary);
+            transition: all var(--transition-fast);
         }
 
-        .qr-container:hover {
-            transform: scale(1.05) rotate(2deg);
+        .direct-link-item:hover {
+            border-color: var(--color-primary);
+            background: var(--color-primary);
+            color: #ffffff;
         }
 
-        .qr-container img {
-            width: 120px;
-            height: 120px;
+        .social-buttons-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-btn-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffffff;
+            border: 1px solid var(--color-hairline);
+            padding: 8px 16px;
+            border-radius: var(--radius-xs);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--color-ink);
+            transition: all var(--transition-fast);
+        }
+
+        .social-btn-box:hover {
+            border-color: var(--color-coral);
+            color: var(--color-coral);
+        }
+
+        /* Form Card */
+        .form-card-cohere {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 1px solid var(--color-hairline);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        .form-card-cohere h3 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+
+        .form-card-cohere p.form-sub {
+            font-size: 14px;
+            color: var(--color-body-muted);
+            margin-bottom: 24px;
+        }
+
+        .form-grid-contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-group-c {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group-c.full {
+            grid-column: span 2;
+        }
+
+        .form-group-c label {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--color-slate);
+            text-transform: uppercase;
+        }
+
+        .form-input-c {
+            padding: 12px 16px;
+            border: 1px solid var(--color-hairline);
+            border-radius: var(--radius-xs);
+            font-family: var(--font-body);
+            font-size: 15px;
+            color: var(--color-ink);
+            background: #ffffff;
+            transition: border-color var(--transition-fast);
+        }
+
+        .form-input-c:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        /* Success feedback banner */
+        .success-banner {
+            display: none;
+            background: var(--color-soft-stone);
+            border: 1px solid var(--color-deep-green);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 20px;
+        }
+
+        .success-banner.active {
             display: block;
         }
 
-        /* RESPONSIVE MEDIA QUERIES */
+        .success-banner h4 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            color: var(--color-deep-green);
+            margin-bottom: 4px;
+        }
+
+        .success-banner p {
+            font-size: 14px;
+            color: var(--color-body-muted);
+        }
+
+        /* Footer */
+        footer.cohere-footer {
+            background: var(--color-primary);
+            color: var(--color-on-dark);
+            padding: 80px 0 36px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-top-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 48px;
+            margin-bottom: 64px;
+        }
+
+        .footer-brand-col img {
+            height: 40px;
+            width: auto;
+            margin-bottom: 16px;
+        }
+
+        .footer-nav-col h4 {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--color-coral);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-nav-col a {
+            font-size: 14px;
+            color: var(--color-muted);
+        }
+
+        .footer-nav-col a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom-row {
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--color-muted);
+        }
+
         @media (max-width: 1024px) {
-            body {
-                overflow-y: auto;
-                height: auto;
-            }
-
-            .contact-container {
-                grid-template-columns: 1fr;
-                height: auto;
-                min-height: 100vh;
-            }
-
-            .profile-card {
-                min-height: 450px;
-            }
-
-            .dynamic-panel {
-                height: auto;
-                display: block;
-                position: relative;
-            }
-
-            .right-grid {
-                display: grid;
-                grid-template-rows: auto auto;
-            }
-
-            .form-wrapper {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            .form-wrapper.fade-in {
-                position: relative;
-            }
-
-            .right-grid.fade-out {
-                position: absolute;
-            }
+            .contact-bento-grid { grid-template-columns: 1fr; }
+            .footer-top-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
-            header {
-                padding: 1rem 4%;
-                height: auto;
-            }
-
-            .contact-container {
-                padding-top: 1rem;
-                gap: 1rem;
-            }
-
-            .right-grid {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-            }
-
-            .greeting-card {
-                grid-column: span 1;
-                padding: 2rem 1.5rem;
-            }
-
-            .form-card {
-                padding: 2.5rem 1.5rem;
-            }
+            .nav-links-center { display: none; }
+            .form-grid-contact { grid-template-columns: 1fr; }
+            .form-group-c.full { grid-column: span 1; }
+            .footer-top-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 
 <body>
-    <div class="hero-bg-mesh"></div>
 
-    <header id="mainHeader">
-        <a href="index.html" class="logo-container">
-        
-        </a>
+    <div class="announcement-bar">
+        <span><strong>VQube 2026:</strong> Global Industrial Engineering Consulting & Manpower Solutions</span>
+        <a href="index.html#services">Explore Services &rarr;</a>
+    </div>
 
-        <nav>
-            <a href="index.html" class="cta-button magnetic-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" style="width: 16px; height: 16px;">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <span>Home</span>
+    <header class="site-nav">
+        <div class="container nav-grid">
+            <a href="index.html" class="brand-logo" aria-label="VQube Technologies Home">
+                <img src="Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
             </a>
-        </nav>
-    </header>
 
-    <main class="contact-container">
-        <!-- Left Profile Card -->
-        <div class="bento-card profile-card">
-            <img src="Photo Frame.jpeg" alt="Vadivelu Dhamodharan">
-            <div class="profile-overlay"></div>
-            <div class="profile-info">
-                <h1>Vadivelu Dhamodharan</h1>
-                <p>Head - Engineering & Business Solutions</p>
+            <nav>
+                <ul class="nav-links-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#capabilities">Capabilities</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="Contact.html" style="color:var(--color-action-blue);">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <a href="index.html" class="btn-primary">
+                    &larr; Back to Home
+                </a>
             </div>
         </div>
+    </header>
 
-        <!-- Right Dynamic Panel -->
-        <div class="dynamic-panel">
+    <main class="contact-section">
+        <div class="container">
+            <div class="contact-hero-wrap">
+                <span class="taxonomy-chip">GET IN TOUCH // DIRECT ADVISORY</span>
+                <h1>Let's engineer the future.</h1>
+                <p>
+                    Partner with VQube Technologies for innovative engineering solutions, technical expertise, and reliable project execution. Connect with us to discuss your engineering requirements and business goals.
+                </p>
+            </div>
 
-            <!-- DEFAULT GRID VIEW -->
-            <div class="right-grid" id="defaultView">
-                <div class="bento-card greeting-card">
-                    <h2>Let's engineer<br>the future.</h2>
-                    <p>Partner with VQube Technologies for innovative engineering solutions, technical expertise, and
-                        reliable project execution. Connect with us to discuss your engineering requirements and
-                        business
-                        goals.</p>
+            <div class="contact-bento-grid">
+                <!-- Left Column -->
+                <div class="left-col">
+                    <div class="leader-card">
+                        <img src="Photo Frame.jpeg" alt="Vadivelu Dhamodharan">
+                        <div class="leader-overlay">
+                            <span class="mono-tag" style="color:#00e5ff; margin-bottom:4px;">EXECUTIVE LEADERSHIP</span>
+                            <h2>Vadivelu Dhamodharan</h2>
+                            <p>Head - Engineering & Business Solutions</p>
+                        </div>
+                    </div>
 
-                    <div class="action-buttons">
-                        <button i="bookBtn" class="cta-button magnetic-btn book-btn">
-                            Book an Appointment
-                        </button>
-                        <!-- THIS LINE WAS UPDATED: Opens directly in Web Gmail in a new tab -->
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=velgdv@gmail.com" target="_blank"
-                            class="email-link">
-                            velgdv@gmail.com
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
+                    <div class="qr-card-cohere">
+                        <div class="qr-img-box">
+                            <img src="QR.png" alt="QR Code">
+                        </div>
+                        <div class="qr-text">
+                            <h4>Instant Mobile Contact</h4>
+                            <p>Scan to instantly save contact details & WhatsApp link to your mobile device.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bento-card socials-card">
-                    <h3>Connect online</h3>
-                    <div class="social-grid">
-                        <a href="https://www.linkedin.com/in/vadiveludhamodharan" class="social-btn magnetic-btn"
-                            aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-                        <a href="https://maps.app.goo.gl/tafZc8eqjrF6T3b89" class="social-btn magnetic-btn"
-                            aria-label="Location">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </a>
+                <!-- Right Column -->
+                <div class="right-col">
+                    <div class="direct-connect-card">
+                        <span class="mono-tag coral" style="margin-bottom:8px; display:block;">DIRECT CHANNELS</span>
+                        <h3>Connect Directly with Our Advisory Desk</h3>
                         
-                    </div>
-                </div>
+                        <div class="direct-links-row">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=velgdv@gmail.com" target="_blank" rel="noopener" class="direct-link-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>velgdv@gmail.com</span>
+                            </a>
 
-                <div class="bento-card qr-card">
-                    <div class="qr-container">
-                        <img src="QR.png" alt="QR Code">
+                            <a href="tel:+919962293530" class="direct-link-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 1 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>+91 99622 93530</span>
+                            </a>
+                        </div>
+
+                        <div class="social-buttons-row">
+                            <a href="https://www.linkedin.com/in/vadiveludhamodharan" target="_blank" rel="noopener" class="social-btn-box">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <span>Leadership LinkedIn</span>
+                            </a>
+
+                            <a href="https://maps.app.goo.gl/tafZc8eqjrF6T3b89" target="_blank" rel="noopener" class="social-btn-box">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+                                </svg>
+                                <span>Chennai Office Location</span>
+                            </a>
+                        </div>
                     </div>
-                    <p>Scan to instantly<br>save my contact</p>
+
+                    <div class="form-card-cohere">
+                        <div class="success-banner" id="successBanner">
+                            <h4>Message Sent Successfully!</h4>
+                            <p>We have received your message and will get back to you shortly.</p>
+                        </div>
+
+                        <h3>Send a Message</h3>
+                        <p class="form-sub">Submit your project parameters or schedule a consultation with our engineers.</p>
+
+                        <form id="contactPageForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-grid-contact">
+                                <div class="form-group-c">
+                                    <label for="cName">Full Name *</label>
+                                    <input type="text" id="cName" class="form-input-c" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="form-group-c">
+                                    <label for="cEmail">Company Email *</label>
+                                    <input type="email" id="cEmail" class="form-input-c" placeholder="Your Email" required>
+                                </div>
+
+                                <div class="form-group-c">
+                                    <label for="cPhone">Phone / WhatsApp</label>
+                                    <input type="tel" id="cPhone" class="form-input-c" placeholder="+91 99622 93530">
+                                </div>
+
+                                <div class="form-group-c">
+                                    <label for="cSector">Industry Sector *</label>
+                                    <select id="cSector" class="form-input-c" required>
+                                        <option value="" disabled selected>Select Sector</option>
+                                        <option value="Cement Industry">Cement Plant Engineering</option>
+                                        <option value="Mining & Minerals">Mining & Mineral Processing</option>
+                                        <option value="Oil & Gas">Oil & Gas (Upstream/Downstream)</option>
+                                        <option value="Manpower Deputation">Engineering Manpower Deputation</option>
+                                        <option value="CFD / FEA Simulation">CFD / FEA Simulation</option>
+                                        <option value="Other">Other Industrial Engineering</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group-c full">
+                                    <label for="cMsg">How can we help you? *</label>
+                                    <textarea id="cMsg" class="form-input-c" rows="4" placeholder="Describe your engineering project or manpower scope..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary" style="width:100%;">
+                                Send Message &rarr;
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-            <!-- FORM VIEW -->
-            <div class="bento-card form-wrapper form-card" id="formView">
-
-                <div class="success-overlay" id="successOverlay">
-                    <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <h3>Message Sent!</h3>
-                    <p>We have received your message and will get back to you shortly.</p>
-                </div>
-
-                <div class="form-header">
-                    <h2>Send a message</h2>
-                    <button class="back-btn" id="backBtn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        Back
-                    </button>
-                </div>
-
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" class="form-control" placeholder="How can we help you?"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button submit-btn magnetic-btn" id="submitBtn">
-                        <span>Send Message</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-
         </div>
     </main>
 
+    <footer class="cohere-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html">
+                        <img src="White Log.png" alt="VQube Technologies Logo">
+                    </a>
+                    <div class="footer-brand-tagline">Vector | Vision | Value</div>
+                    <p class="footer-brand-desc" style="color:var(--color-muted); font-size:14px;">
+                        Industrial Engineering Consulting, Numerical Simulation & Global Technical Manpower Solutions.
+                    </p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>PAGES</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#capabilities">Capabilities</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="Term.html">Terms & Conditions</a></li>
+                        <li><a href="sitemap.xml">XML Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>HEADQUARTERS</h4>
+                    <p style="color:var(--color-muted); font-size:14px; line-height:1.6;">
+                        Chennai, Tamil Nadu, India<br>
+                        Email: info@vqubetechnologies.com<br>
+                        Phone: +91 99622 93530
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <p>© 2026 VQube Technologies, All rights reserved.</p>
+                <p>Domain: <a href="https://vqubetechnologies.com" style="color:#ffffff;">vqubetechnologies.com</a></p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Magnetic Button Effect
-            const magneticBtns = document.querySelectorAll('.magnetic-btn');
-            magneticBtns.forEach(btn => {
-                btn.addEventListener('mousemove', (e) => {
-                    const rect = btn.getBoundingClientRect();
-                    const x = e.clientX - rect.left - rect.width / 2;
-                    const y = e.clientY - rect.top - rect.height / 2;
-                    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.05)`;
-                    if (btn.children[0]) btn.children[0].style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
-                });
-                btn.addEventListener('mouseleave', () => {
-                    btn.style.transform = `translate(0px, 0px) scale(1)`;
-                    if (btn.children[0]) btn.children[0].style.transform = `translate(0px, 0px)`;
-                });
-            });
-
-            // View Transition Logic
-            const defaultView = document.getElementById('defaultView');
-            const formView = document.getElementById('formView');
-            const bookBtn = document.getElementById('bookBtn');
-            const backBtn = document.getElementById('backBtn');
-
-            function showForm() {
-                defaultView.classList.add('fade-out');
-                formView.classList.add('fade-in');
-            }
-
-            function hideForm() {
-                formView.classList.remove('fade-in');
-                defaultView.classList.remove('fade-out');
-            }
-
-            bookBtn.addEventListener('click', showForm);
-            backBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                hideForm();
-            });
-
-            // Form Submission Logic
-            const contactForm = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const btnText = submitBtn.querySelector('span');
-            const successOverlay = document.getElementById('successOverlay');
-
-            contactForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-
-                const originalText = btnText.textContent;
-                btnText.textContent = 'Sending...';
-                submitBtn.style.pointerEvents = 'none';
-                submitBtn.style.opacity = '0.7';
-
-                const formData = new FormData(contactForm);
-
-                try {
-                    // Replace "YOUR_FORMSPREE_ENDPOINT" with your actual Formspree URL.
-                    const response = await fetch('YOUR_FORMSPREE_ENDPOINT', {
-                        method: 'POST',
-                        body: formData,
-                        headers: { 'Accept': 'application/json' }
-                    });
-                    showSuccess();
-                } catch (error) {
-                    console.warn("Please set up your Formspree endpoint.");
-                    showSuccess();
-                }
-
-                function showSuccess() {
-                    successOverlay.classList.add('active');
-                    contactForm.reset();
-
-                    setTimeout(() => {
-                        successOverlay.classList.remove('active');
-                        hideForm();
-
-                        setTimeout(() => {
-                            btnText.textContent = originalText;
-                            submitBtn.style.pointerEvents = 'all';
-                            submitBtn.style.opacity = '1';
-                        }, 500);
-                    }, 3000);
-                }
-            });
-        });
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const banner = document.getElementById('successBanner');
+            banner.classList.add('active');
+            document.getElementById('contactPageForm').reset();
+            window.scrollTo({ top: banner.offsetTop - 100, behavior: 'smooth' });
+        }
     </script>
 </body>
 
