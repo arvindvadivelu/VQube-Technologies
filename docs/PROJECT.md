@@ -2,7 +2,7 @@
 
 > **Domain**: [vqubetechnologies.com](https://vqubetechnologies.com/)  
 > **Headquarters**: Chennai, Tamil Nadu, India  
-> **Contact**: info@vqubetechnologies.com | +91 99622 93530  
+> **Contact**: infovqubetechnologies@gmail.com | +91 76048 52835  
 > **Industry**: Industrial Engineering Consulting, Plant Design, CFD/FEA Simulation & Global Technical Manpower Solutions
 
 ---
@@ -23,30 +23,42 @@
 
 ```text
 VQube Technologies/
-├── index.html                           # Production Homepage (Complete single-page application & showcase)
-├── Vqube V2.html                        # Version 2 Next-Gen Website (Modernized UI with interactive estimators)
-├── Contact.html                         # Dedicated Contact & Consultation Request page
-├── Term.html                            # Terms & Conditions legal page
-├── privacy.html                         # Privacy Policy legal page
-├── push.bat                             # One-click Git deployment script to GitHub main branch
-├── robots.txt                           # Search engine crawling rules
-├── sitemap.xml                          # XML Sitemap with priority & update frequencies
-├── zone-file-vqubetechnologies-com.txt  # Production DNS zone configuration records
-├── GEMINI.md                            # Global AI Agent Directives & Behavior Guidelines
-├── PROJECT.md                           # This complete project context & architectural documentation
+├── assets/                               # Media and asset directory
+│   └── images/                           # Consolidated image and graphic assets
+│       ├── 1.jpeg - 4.jpeg               # Visual parallax gallery showcases
+│       ├── CEMENTPLANT.png               # Cement plant engineering hero visual
+│       ├── favicon.png                   # High-resolution browser favicon
+│       ├── Logo_with_Name_-removebg-preview.png # Primary transparent brand logo
+│       ├── MANPOWER.png                  # Technical manpower solutions visual
+│       ├── MINE.png                      # Mining engineering domain visual
+│       ├── OIL.png                       # Oil & Gas solutions visual
+│       ├── P1.jpg - P4.jpg               # Client portfolio testimonial portraits
+│       ├── Photo Frame.jpeg              # Executive leadership portrait
+│       ├── QR.png                        # WhatsApp direct contact QR code
+│       └── White Log.png                 # Inverted white logo for dark surfaces
 │
-└── Assets/
-    ├── Logo_with_Name_-removebg-preview.png  # Main brand transparent logo
-    ├── White Log.png                        # Inverted white logo for dark backgrounds
-    ├── favicon.png                          # Browser favicon (48x48)
-    ├── CEMENTPLANT.png                      # Cement plant engineering hero asset
-    ├── MINE.png                             # Mining engineering domain asset
-    ├── OIL.png                              # Oil & Gas solutions asset
-    ├── MANPOWER.png                         # Technical manpower solutions asset
-    ├── QR.png                               # WhatsApp / Direct contact QR code
-    ├── P1.jpg - P4.jpg                      # Project portfolio showcase imagery
-    ├── 1.jpeg - 4.jpeg                      # Engineering case study gallery images
-    └── Photo Frame.jpeg                     # Office / Team credentials frame
+├── brand-kit/                            # Company Brand Kit & UI tokens
+│   ├── README.md                         # Brand identity and style guidelines
+│   ├── brand-kit.css                     # Reusable corporate CSS custom properties
+│   ├── brand-kit.js                      # Dynamic Brand Kit helper script
+│   └── brand-kit.json                    # Centralized JSON brand tokens and metadata
+│
+├── docs/                                 # Architectural specifications & DNS records
+│   ├── description.md                    # Master Architecture & Content Specification
+│   ├── PROJECT.md                        # Complete project context & architectural documentation
+│   ├── context.md                        # Business domain context notes
+│   └── zone-file-vqubetechnologies-com.txt # Production DNS zone configuration records
+│
+├── Contact.html                          # Dedicated Contact & Consultation Request page
+├── index.html                            # Master Production Homepage (Apple Bento Design)
+├── privacy.html                          # Privacy Policy legal page
+├── Term.html                             # Terms & Conditions legal page
+├── README.md                             # Official corporate GitHub repository README
+├── push.bat                              # One-click Git deployment script to GitHub main branch
+├── robots.txt                            # Search engine crawling rules
+├── sitemap.xml                           # XML Sitemap with priority & update frequencies
+├── LICENSE                               # MIT License
+└── GEMINI.md                             # Global Agent Directives & Behavior Guidelines
 ```
 
 ---

@@ -199,7 +199,7 @@
       "margin": "40px",
       "opacity": 0.85,
       "maxHeight": "48px",
-      "recommendedAsset": "White Log.png"
+      "recommendedAsset": "assets/images/White Log.png"
     },
     "captions": {
       "fontFamily": "Plus Jakarta Sans",
@@ -219,9 +219,9 @@
     }
   },
   "assets": {
-    "logoMain": "Logo_with_Name_-removebg-preview.png",
-    "logoWhite": "White Log.png",
-    "favicon": "favicon.png",
-    "qrCode": "QR.png"
+    "logoMain": "assets/images/Logo_with_Name_-removebg-preview.png",
+    "logoWhite": "assets/images/White Log.png",
+    "favicon": "assets/images/favicon.png",
+    "qrCode": "assets/images/QR.png"
   }
 }

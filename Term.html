@@ -2,59 +2,118 @@
 <html lang="en">
 
 <head>
+    <!-- Character Encoding & Responsive Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
     <title>Terms & Conditions | VQube Technologies</title>
     <meta name="description"
-        content="Terms & Conditions for VQube Technologies. Governed by the laws of India, exclusive jurisdiction in Chennai, Tamil Nadu.">
-    <link rel="canonical" href="https://vqubetechnologies.com/Term.html">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+        content="Terms & Conditions for VQube Technologies website and engineering advisory services. Governed by the laws of India, exclusive jurisdiction in Chennai, Tamil Nadu.">
+    <meta name="keywords"
+        content="Terms and Conditions, VQube Technologies Terms, Legal, Engineering Consulting Terms, Chennai Jurisdiction, VQube Legal">
+    <meta name="author" content="VQube Technologies">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- Google Fonts -->
+    <!-- Canonical & Favicon -->
+    <link rel="canonical" href="https://vqubetechnologies.com/Term.html">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="VQube Technologies">
+    <meta property="og:title" content="Terms & Conditions | VQube Technologies">
+    <meta property="og:description"
+        content="Terms & Conditions governing the use of VQube Technologies website and engineering consulting services.">
+    <meta property="og:url" content="https://vqubetechnologies.com/Term.html">
+    <meta property="og:image" content="https://vqubetechnologies.com/assets/images/favicon.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terms & Conditions | VQube Technologies">
+    <meta name="twitter:description"
+        content="Legal terms and operating conditions for VQube Technologies.">
+    <meta name="twitter:image" content="https://vqubetechnologies.com/assets/images/favicon.png">
+
+    <!-- Google Fonts (Inter + Plus Jakarta Sans + JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <style>
         /* ==========================================================================
-           COHERE 2026 DESIGN SYSTEM TOKENS (cohere-DESIGN.md)
+           1. APPLE MINIMALIST DESIGN SYSTEM TOKENS
            ========================================================================== */
         :root {
-            --color-primary: #17171c;
-            --color-cohere-black: #000000;
-            --color-ink: #212121;
-            --color-canvas: #ffffff;
-            --color-soft-stone: #eeece7;
-            --color-hairline: #d9d9dd;
-            --color-border-light: #e5e7eb;
-            --color-muted: #93939f;
-            --color-slate: #75758a;
-            --color-body-muted: #616161;
-            --color-action-blue: #1863dc;
-            --color-coral: #ff7759;
-            --color-coral-soft: #ffad9b;
+            --color-primary: #1d1d1f;          /* Apple Charcoal Black */
+            --color-apple-black: #000000;      /* Absolute Pure Black */
+            --color-ink: #1d1d1f;              /* High-contrast body text */
+            --color-body-muted: #86868b;       /* Apple Secondary Gray */
+            --color-slate: #6e6e73;            /* Apple Tertiary Gray */
+            --color-muted: #86868b;            /* Metadata, subheadings */
+            --color-canvas: #ffffff;           /* Stark White Canvas */
+            --color-soft-stone: #f5f5f7;       /* Apple Signature Light Gray Surface */
+            --color-surface-subtle: #fbfbfd;   /* Subtle Apple off-white backdrop */
+            --color-card-border: rgba(0, 0, 0, 0.06); /* Ultra-clean subtle card border */
+            --color-hairline: #d2d2d7;         /* Apple Hairline Rule */
+            --color-border-light: #e5e5ea;     /* Clean Apple Divider */
+            --color-action-blue: #0071e3;      /* Apple Signature Interactive Blue */
+            --color-action-hover: #0077ed;     /* Apple Blue Hover */
+            --color-focus-blue: #0071e3;       /* Keyboard focus outline */
+            --color-pill-badge: rgba(0, 113, 227, 0.08); /* Apple Capsule Tint */
+            --color-dark-pro: #111113;         /* Apple Pro Space Black Surface */
+            --color-on-primary: #ffffff;
             --color-on-dark: #ffffff;
 
-            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+            /* Typography */
+            --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
 
-            --radius-xs: 4px;
-            --radius-sm: 8px;
-            --radius-md: 16px;
-            --radius-pill: 32px;
+            /* Radii */
+            --radius-xs: 6px;
+            --radius-sm: 12px;
+            --radius-md: 20px;
+            --radius-lg: 24px;
+            --radius-pill: 980px;
             --radius-full: 9999px;
 
-            --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+            /* Spacing */
+            --space-section: 90px;
+            --space-container: 1040px;
+
+            /* Transitions */
+            --transition-fast: 180ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            --transition-base: 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        /* ==========================================================================
+           2. GLOBAL RESETS & BASE STYLES
+           ========================================================================== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ::selection {
+            background-color: var(--color-action-blue);
+            color: #ffffff;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--color-action-blue);
+            outline-offset: 3px;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -62,176 +121,412 @@
             background-color: var(--color-canvas);
             color: var(--color-ink);
             line-height: 1.65;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 400;
             overflow-x: hidden;
+            letter-spacing: -0.015em;
+        }
+
+        /* Scroll Reveal */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s var(--ease-apple), transform 0.8s var(--ease-apple);
+            will-change: opacity, transform;
+        }
+
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         a {
             color: inherit;
             text-decoration: none;
-            transition: color var(--transition-fast);
+            transition: color var(--transition-fast), opacity var(--transition-fast);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         .container {
-            max-width: 960px;
+            max-width: var(--space-container);
             margin: 0 auto;
-            padding: 0 32px;
+            padding: 0 36px;
         }
 
-        /* Top Announcement Bar */
-        .announcement-bar {
-            background: var(--color-cohere-black);
-            color: var(--color-on-dark);
-            height: 38px;
-            display: flex;
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: var(--color-action-blue);
+            width: 0%;
+            z-index: 99999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Apple Capsule Badge */
+        .apple-badge, .taxonomy-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--color-pill-badge);
+            color: var(--color-action-blue);
+            border: 1px solid rgba(0, 113, 227, 0.2);
+            padding: 4px 14px;
+            border-radius: var(--radius-pill);
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            transition: all var(--transition-fast);
+        }
+
+        .apple-badge:hover, .taxonomy-chip:hover {
+            background: var(--color-action-blue);
+            color: #ffffff;
+            border-color: var(--color-action-blue);
+        }
+
+        .mono-num {
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            color: var(--color-action-blue);
+            margin-bottom: 8px;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 13px;
-            padding: 0 20px;
-        }
-
-        .announcement-bar a {
+            gap: 8px;
+            background: var(--color-action-blue);
             color: #ffffff;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            margin-left: 8px;
+            font-family: var(--font-body);
+            font-size: 14px;
             font-weight: 500;
+            padding: 10px 22px;
+            border-radius: var(--radius-pill);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0, 113, 227, 0.24);
+            transition: background var(--transition-fast), transform var(--transition-fast);
+            text-decoration: none;
         }
 
-        /* Nav */
+        .btn-primary:hover {
+            background: var(--color-action-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            color: var(--color-action-blue);
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 0;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color var(--transition-fast), transform var(--transition-fast);
+        }
+
+        .btn-secondary:hover {
+            color: var(--color-action-hover);
+            transform: translateX(3px);
+        }
+
+        .btn-pill-outline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--color-soft-stone);
+            color: var(--color-primary);
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 9px 20px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--color-hairline);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .btn-pill-outline:hover {
+            border-color: var(--color-primary);
+            background: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        /* ==========================================================================
+           3. APPLE FROSTED GLASS NAV
+           ========================================================================== */
         header.site-nav {
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.94);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--color-hairline);
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--color-border-light);
             z-index: 1000;
+            transition: background var(--transition-fast), border-color var(--transition-fast);
         }
 
         .nav-grid {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 72px;
-            max-width: 1280px;
+            height: 84px;
+            max-width: 1220px;
             margin: 0 auto;
-            padding: 0 32px;
+            padding: 0 36px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
         }
 
         .brand-logo img {
-            height: 42px;
+            height: 56px;
             width: auto;
             object-fit: contain;
+            display: block;
+            transition: transform var(--transition-fast);
+        }
+
+        .brand-logo:hover img {
+            transform: scale(1.02);
         }
 
         .nav-links-center {
             display: flex;
             align-items: center;
-            gap: 36px;
+            gap: 32px;
             list-style: none;
         }
 
         .nav-links-center a {
+            font-family: var(--font-body);
             font-size: 14px;
             font-weight: 500;
-            color: var(--color-ink);
+            color: var(--color-slate);
+            transition: color var(--transition-fast);
+            padding: 8px 0;
+            position: relative;
         }
 
         .nav-links-center a:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-actions-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-primary);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 96px 36px 40px;
+            gap: 16px;
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease;
+            z-index: 99998;
+            overflow-y: auto;
+        }
+
+        .mobile-drawer.open {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .mobile-drawer-header {
+            position: absolute;
+            top: 22px;
+            left: 36px;
+            right: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-drawer-close {
+            background: #f5f5f7;
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--color-primary);
+            transition: background var(--transition-fast);
+        }
+
+        .mobile-drawer-close:hover {
+            background: #e5e5ea;
+        }
+
+        .mobile-drawer a.drawer-nav-item {
+            font-family: var(--font-display);
+            font-size: clamp(22px, 5.5vw, 30px);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--color-border-light);
+            color: var(--color-primary);
+            transition: color var(--transition-fast), transform var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+
+        .mobile-drawer a.drawer-nav-item:hover,
+        .mobile-drawer a.drawer-nav-item.active {
+            color: var(--color-action-blue);
+            transform: translateX(4px);
+        }
+
+        .mobile-drawer a.drawer-nav-item span {
+            color: var(--color-body-muted);
+            font-size: 18px;
+            transition: transform var(--transition-fast);
+        }
+
+        .mobile-drawer a.drawer-nav-item:hover span {
+            transform: translateX(4px);
             color: var(--color-action-blue);
         }
 
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background: var(--color-primary);
-            color: #ffffff;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 10px 20px;
-            border-radius: var(--radius-pill);
-            border: 1px solid var(--color-primary);
-            transition: all var(--transition-fast);
+        .mobile-drawer-footer {
+            margin-top: auto;
+            padding-top: 24px;
+            border-top: 1px solid var(--color-border-light);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
-        .btn-primary:hover {
-            background: var(--color-cohere-black);
+        .mobile-drawer-footer a {
+            font-family: var(--font-body);
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--color-action-blue);
+            text-decoration: none;
+            padding: 4px 0;
         }
 
-        .taxonomy-chip {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: transparent;
-            color: var(--color-coral);
-            border: 1px solid var(--color-coral-soft);
-            padding: 6px 14px;
-            border-radius: var(--radius-sm);
-            font-family: var(--font-mono);
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 16px;
-        }
-
-        .mono-num {
-            font-family: var(--font-mono);
-            font-size: 13px;
-            color: var(--color-coral);
-            margin-bottom: 6px;
-            display: block;
-            letter-spacing: 0.28px;
-        }
-
-        /* Editorial Article Layout */
+        /* ==========================================================================
+           4. LEGAL EDITORIAL ARTICLE LAYOUT
+           ========================================================================== */
         .legal-article-section {
-            padding: 72px 0 96px;
+            padding: 80px 0 120px;
+            background: var(--color-canvas);
         }
 
         .legal-header {
-            margin-bottom: 48px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid var(--color-hairline);
+            margin-bottom: 56px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid var(--color-border-light);
         }
 
         .legal-header h1 {
             font-family: var(--font-display);
-            font-size: clamp(38px, 5vw, 60px);
-            font-weight: 400;
-            line-height: 1.05;
-            letter-spacing: -1.2px;
+            font-size: clamp(40px, 5.2vw, 64px);
+            font-weight: 700;
+            line-height: 1.06;
+            letter-spacing: -0.035em;
             color: var(--color-primary);
-            margin-top: 12px;
-            margin-bottom: 12px;
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
 
-        .effective-date {
-            font-family: var(--font-mono);
+        .legal-header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .effective-date-pill {
+            font-family: var(--font-body);
             font-size: 13px;
+            font-weight: 600;
             color: var(--color-slate);
-            text-transform: uppercase;
-            letter-spacing: 0.28px;
+            background: var(--color-soft-stone);
+            padding: 6px 14px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--color-hairline);
         }
 
         .legal-clause-block {
-            margin-bottom: 40px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid var(--color-hairline);
+            margin-bottom: 32px;
+            padding: 36px 40px;
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-card-border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
         }
 
-        .legal-clause-block:last-child {
-            border-bottom: none;
+        .legal-clause-block:hover {
+            border-color: var(--color-hairline);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
         }
 
         .legal-clause-block h2 {
             font-family: var(--font-display);
-            font-size: 26px;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 700;
             color: var(--color-primary);
-            letter-spacing: -0.32px;
+            letter-spacing: -0.02em;
             margin-bottom: 14px;
         }
 
@@ -242,60 +537,112 @@
             margin-bottom: 14px;
         }
 
+        .legal-clause-block p:last-child {
+            margin-bottom: 0;
+        }
+
         .legal-clause-block ul {
             list-style: none;
-            margin-left: 4px;
-            margin-bottom: 16px;
+            margin: 14px 0 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
         .legal-clause-block li {
             font-size: 15px;
             color: var(--color-ink);
             position: relative;
-            padding-left: 20px;
-            margin-bottom: 8px;
+            padding-left: 22px;
             line-height: 1.6;
         }
 
         .legal-clause-block li::before {
-            content: '—';
+            content: '•';
             position: absolute;
-            left: 0;
-            color: var(--color-coral);
+            left: 6px;
+            color: var(--color-action-blue);
             font-weight: bold;
+            font-size: 16px;
         }
 
-        /* Footer */
-        footer.cohere-footer {
-            background: var(--color-primary);
-            color: var(--color-on-dark);
-            padding: 80px 0 36px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        /* ==========================================================================
+           5. APPLE MINIMALIST FOOTER
+           ========================================================================== */
+        footer.site-footer {
+            background: var(--color-soft-stone);
+            color: var(--color-body-muted);
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--color-border-light);
+            font-size: 13px;
         }
 
         .footer-top-grid {
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 48px;
             margin-bottom: 64px;
-            max-width: 1280px;
+            max-width: 1220px;
             margin-left: auto;
             margin-right: auto;
-            padding: 0 32px;
+            padding: 0 36px;
         }
 
         .footer-brand-col img {
-            height: 40px;
+            height: 48px;
             width: auto;
             margin-bottom: 16px;
         }
 
-        .footer-nav-col h4 {
-            font-family: var(--font-mono);
-            font-size: 12px;
-            color: var(--color-coral);
-            text-transform: uppercase;
+        .footer-brand-tagline {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--color-primary);
+            letter-spacing: -0.01em;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand-desc {
+            font-size: 14px;
+            color: var(--color-body-muted);
+            line-height: 1.6;
             margin-bottom: 20px;
+            max-width: 320px;
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .f-social-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-full);
+            background: #ffffff;
+            border: 1px solid var(--color-border-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            transition: all var(--transition-fast);
+        }
+
+        .f-social-btn:hover {
+            background: var(--color-action-blue);
+            color: #ffffff;
+            border-color: var(--color-action-blue);
+        }
+
+        .footer-nav-col h4 {
+            font-family: var(--font-body);
+            font-size: 12px;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            margin-bottom: 18px;
         }
 
         .footer-nav-col ul {
@@ -306,44 +653,100 @@
         }
 
         .footer-nav-col a {
-            font-size: 14px;
-            color: var(--color-muted);
+            font-size: 13px;
+            color: var(--color-body-muted);
+            transition: color var(--transition-fast);
         }
 
-        .footer-nav-col a:hover {
-            color: #ffffff;
+        .footer-nav-col a:hover, .footer-nav-col a.active {
+            color: var(--color-action-blue);
         }
 
         .footer-bottom-row {
-            padding: 28px 32px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 28px 36px 0;
+            border-top: 1px solid var(--color-border-light);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 13px;
-            color: var(--color-muted);
-            max-width: 1280px;
+            font-size: 12px;
+            color: var(--color-body-muted);
+            max-width: 1220px;
             margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        /* Back to top button */
+        #backToTop {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            background: var(--color-primary);
+            color: #ffffff;
+            border: none;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-fast);
+            z-index: 999;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #backToTop:hover {
+            background: var(--color-action-blue);
+        }
+
+        /* ==========================================================================
+           6. RESPONSIVE BREAKPOINTS
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            .footer-top-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 768px) {
-            .nav-links-center { display: none; }
-            .footer-top-grid { grid-template-columns: 1fr; }
+            .nav-links-center {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .legal-clause-block {
+                padding: 28px 24px;
+            }
+
+            .footer-top-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="announcement-bar">
-        <span><strong>VQube 2026:</strong> Global Industrial Engineering Consulting & Manpower Solutions</span>
-        <a href="index.html#services">Explore Services &rarr;</a>
-    </div>
+    <div class="progress-bar" id="progressBar"></div>
 
-    <header class="site-nav">
+    <!-- ==========================================================================
+         GLOBAL APPLE FROSTED GLASS NAVIGATION
+         ========================================================================== -->
+    <header class="site-nav" id="siteNav">
         <div class="nav-grid">
             <a href="index.html" class="brand-logo" aria-label="VQube Technologies Home">
-                <img src="Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
+                <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
             </a>
 
             <nav>
@@ -353,252 +756,390 @@
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#capabilities">Capabilities</a></li>
                     <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <div>
-                <a href="index.html" class="btn-primary">
-                    &larr; Back to Home
+            <div class="nav-actions-right">
+                <a href="https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services." target="_blank" rel="noopener" class="btn-secondary"
+                    style="font-size:14px; text-decoration:none; color:var(--color-body-muted);">
+                    +91 76048 52835
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Full-Page Mobile Drawer Menu -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <div class="mobile-drawer-header">
+                <a href="index.html" onclick="toggleMobileDrawer()" class="brand-logo" aria-label="VQube Technologies Home">
+                    <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo" style="height:40px; width:auto;">
+                </a>
+                <button class="mobile-drawer-close" onclick="toggleMobileDrawer()" aria-label="Close Navigation Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <a href="index.html" onclick="toggleMobileDrawer()" class="drawer-nav-item">Home <span>&rarr;</span></a>
+            <a href="index.html#about" onclick="toggleMobileDrawer()" class="drawer-nav-item">About <span>&rarr;</span></a>
+            <a href="index.html#services" onclick="toggleMobileDrawer()" class="drawer-nav-item">Services <span>&rarr;</span></a>
+            <a href="index.html#capabilities" onclick="toggleMobileDrawer()" class="drawer-nav-item">Capabilities <span>&rarr;</span></a>
+            <a href="index.html#testimonials" onclick="toggleMobileDrawer()" class="drawer-nav-item">Testimonials <span>&rarr;</span></a>
+            <a href="index.html#faq" onclick="toggleMobileDrawer()" class="drawer-nav-item">FAQ <span>&rarr;</span></a>
+            <a href="Contact.html" onclick="toggleMobileDrawer()" class="drawer-nav-item">Contact Us <span>&rarr;</span></a>
+
+            <div class="mobile-drawer-footer">
+                <a href="https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services." target="_blank" rel="noopener">
+                    💬 WhatsApp: +91 76048 52835
+                </a>
+                <a href="mailto:infovqubetechnologies@gmail.com">
+                    ✉️ Email: infovqubetechnologies@gmail.com
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- ==========================================================================
+         LEGAL ARTICLE CONTENT (Section 6 in description.md)
+         ========================================================================== -->
     <main class="legal-article-section">
         <div class="container">
             <div class="legal-header">
                 <span class="taxonomy-chip">LEGAL & COMPLIANCE // TERMS OF SERVICE</span>
                 <h1>Terms & Conditions</h1>
-                <div class="effective-date">EFFECTIVE DATE: JULY 2026</div>
+                <div class="legal-header-meta">
+                    <span class="effective-date-pill">EFFECTIVE DATE: JULY 2026</span>
+                    <span style="font-size: 14px; color: var(--color-body-muted);">Jurisdiction: Chennai, Tamil Nadu, India</span>
+                </div>
             </div>
 
             <!-- Clause 1 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">01 / ACCEPTANCE OF TERMS</span>
                 <h2>1. Introduction</h2>
                 <p>
-                    Welcome to the VQube Technologies website ("Website"). These Terms & Conditions ("Terms") govern your access to and use of our Website and its content.
+                    Welcome to the VQube Technologies website ("Website"). These Terms & Conditions ("Terms") govern your access to and use of our Website and its published content.
                 </p>
                 <p>
-                    By accessing or using this Website, you agree to comply with these Terms. If you do not agree, please discontinue use of the Website immediately.
+                    By accessing or using this Website, you agree to comply with and be bound by these Terms. If you do not agree to these Terms, please discontinue use of the Website immediately.
                 </p>
             </div>
 
             <!-- Clause 2 -->
-            <div class="legal-clause-block">
-                <span class="mono-num">02 / CORPORATE PROFILE</span>
+            <div class="legal-clause-block reveal-on-scroll">
+                <span class="mono-num">02 / CORPORATE PROFILE & SCOPE</span>
                 <h2>2. About Us</h2>
                 <p>
-                    VQube Technologies is an industrial engineering and technical solutions provider offering services including, but not limited to:
+                    <strong>VQube Technologies [VQT]</strong> is an industrial engineering, technical advisory, and workforce solutions provider offering multidisciplinary services including, but not limited to:
                 </p>
                 <ul>
-                    <li>Engineering Design & Drafting</li>
-                    <li>Project Development & Technical Consulting</li>
+                    <li>Engineering Design & Drafting (AutoCAD, SolidWorks, Tekla Structures)</li>
+                    <li>Project Development & Technical Consulting (Feasibility & FEED Studies)</li>
                     <li>Mechanical, Structural & Plant Engineering</li>
                     <li>Technical Documentation & Specification Sheets</li>
-                    <li>Engineering Software & Numerical Simulation Support</li>
-                    <li>Project Management & Coordination Support</li>
-                    <li>Skilled Manpower Deputation & Technical Recruitment</li>
-                    <li>Industrial Plant Optimization Services</li>
+                    <li>Engineering Software Support & Numerical Simulation (ANSYS CFD & FEA)</li>
+                    <li>Project Management Support & Engineering Coordination</li>
+                    <li>Skilled Manpower Supply & Technical Recruitment Services</li>
+                    <li>Industrial Plant Optimization & Troubleshooting</li>
                 </ul>
             </div>
 
             <!-- Clause 3 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">03 / PERMITTED CONDUCT</span>
                 <h2>3. Website Use</h2>
-                <p>You agree to use this Website only for lawful business purposes. You shall not:</p>
+                <p>You agree to use this Website only for legitimate and lawful business purposes. You shall not:</p>
                 <ul>
-                    <li>Use the Website in violation of applicable national or international laws or regulations.</li>
-                    <li>Attempt unauthorised access to any part of the Website, server infrastructure, or interconnected databases.</li>
-                    <li>Introduce viruses, malware, trojans, or harmful malicious software.</li>
-                    <li>Copy, reproduce, distribute, or modify Website content without prior written permission from VQube Technologies.</li>
-                    <li>Use the Website in a manner that may disrupt, impair, or compromise its operation or security.</li>
+                    <li>Use the Website in violation of applicable national, state, or international laws or statutory regulations.</li>
+                    <li>Attempt unauthorized access to any portion of the Website, hosting servers, infrastructure, or connected databases.</li>
+                    <li>Introduce viruses, trojans, worms, logic bombs, or other malicious software materials.</li>
+                    <li>Copy, scrape, reproduce, distribute, or modify Website content without prior written authorization from VQube Technologies.</li>
+                    <li>Use the Website in any manner that could disable, overburden, damage, or impair its availability or operational security.</li>
                 </ul>
             </div>
 
             <!-- Clause 4 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">04 / PROPRIETARY RIGHTS</span>
                 <h2>4. Intellectual Property</h2>
-                <p>Unless otherwise stated, all content on this Website, including:</p>
+                <p>Unless otherwise explicitly stated, all content and digital assets on this Website, including:</p>
                 <ul>
-                    <li>Company name & brand marks</li>
-                    <li>Logos & visual graphics</li>
-                    <li>Images & photographic assets</li>
-                    <li>Engineering content & narrative text</li>
-                    <li>Technical drawings & schematics</li>
-                    <li>Documents, brochures, & presentations</li>
-                    <li>Software materials & simulation datasets</li>
+                    <li>Company name, logo variations, and brand marks</li>
+                    <li>Graphic assets, visual diagrams, and user interface designs</li>
+                    <li>Photographic assets, 3D renderings, and media compositions</li>
+                    <li>Engineering copywriting, technical narrative, and articles</li>
+                    <li>Technical drawings, schematics, and general arrangements</li>
+                    <li>Documents, technical brochures, and digital presentations</li>
+                    <li>Software materials, computational workflows, and simulation datasets</li>
                 </ul>
                 <p>
-                    is the intellectual property of VQube Technologies or its licensors and is protected by applicable intellectual property laws. No content may be copied, reproduced, republished, or distributed without prior written consent.
+                    are the proprietary intellectual property of VQube Technologies or its licensors and are protected under Indian and international intellectual property laws. Reproduction, redistribution, or modification without express prior written consent is strictly prohibited.
                 </p>
             </div>
 
             <!-- Clause 5 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">05 / TECHNICAL DISCLAIMER</span>
-                <h2>5. Engineering Information</h2>
+                <h2>5. Engineering Information Disclaimer</h2>
                 <p>
-                    The technical information, drawings, specifications, case studies, and engineering calculations provided on this Website are for general informational purposes only.
+                    The technical information, drawings, specifications, case study references, and engineering calculations published on this Website are provided strictly for general informational and demonstration purposes.
                 </p>
                 <p>
-                    Nothing on this Website constitutes formal engineering sign-off, design certification, professional advisory, or project-specific operational recommendation. Users must obtain professional consultation and formal contract execution before relying on any technical parameters.
+                    Nothing on this Website constitutes formal engineering certification, sign-off, design validation, or project-specific advisory. Clients and users must execute a formal commercial agreement and obtain professional engineering consultation before relying on any technical data or methodologies.
                 </p>
             </div>
 
             <!-- Clause 6 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">06 / COMMERCIAL PROPOSALS</span>
                 <h2>6. Quotations & Proposals</h2>
-                <p>Any quotations, proposals, estimates, or commercial offers provided by VQube Technologies:</p>
+                <p>Any quotations, engineering estimates, scope summaries, or commercial proposals provided by VQube Technologies:</p>
                 <ul>
-                    <li>are subject to change without notice;</li>
-                    <li>remain valid only for the stated validity period;</li>
-                    <li>are strictly governed by the specific commercial agreement entered into between both parties.</li>
+                    <li>are subject to modification or withdrawal without prior notice;</li>
+                    <li>remain valid strictly for the stated quotation validity period;</li>
+                    <li>are governed exclusively by separate, mutually executed commercial contracts and Statements of Work (SOW).</li>
                 </ul>
-                <p>Separate contractual terms and statements of work (SOW) apply to all formal engagements.</p>
+                <p>Website interactions do not constitute a binding commercial agreement or commitment to perform services.</p>
             </div>
 
             <!-- Clause 7 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">07 / CLIENT OBLIGATIONS</span>
                 <h2>7. Client Responsibilities</h2>
-                <p>Clients are responsible for providing:</p>
+                <p>For all active engineering consulting and technical engagements, clients are responsible for providing:</p>
                 <ul>
-                    <li>Accurate project parameters and technical briefs.</li>
-                    <li>Complete engineering data, drawings, and input boundaries.</li>
-                    <li>Site information and operational conditions.</li>
-                    <li>Applicable local standards, codes, and specifications.</li>
-                    <li>Timely reviews, approvals, and milestone feedback.</li>
+                    <li>Accurate project parameters, design criteria, and technical briefs.</li>
+                    <li>Complete engineering data, drawings, boundary conditions, and material specifications.</li>
+                    <li>Accurate site information, environmental data, and operational constraints.</li>
+                    <li>Applicable local statutory standards, industry codes, and regulatory requirements.</li>
+                    <li>Timely reviews, design stage sign-offs, and milestone feedback.</li>
                 </ul>
                 <p>
-                    VQube Technologies shall not be responsible for project delays or additional costs arising from incomplete or inaccurate information provided by the client.
+                    VQube Technologies shall not be held liable for project delays, rework, or cost escalations resulting from incomplete, incorrect, or delayed information furnished by the client.
                 </p>
             </div>
 
             <!-- Clause 8 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">08 / PROPRIETARY DATA</span>
                 <h2>8. Confidentiality</h2>
                 <p>
-                    Both parties shall maintain the confidentiality of proprietary, technical, commercial, and project-related information exchanged during business discussions and engagements, except where disclosure is required by law or agreed in writing.
+                    Both parties agree to maintain strict confidentiality regarding all proprietary, technical, financial, and project-specific data exchanged during business inquiries, feasibility studies, and active project engagements, except where statutory disclosure is mandated by applicable law.
                 </p>
             </div>
 
             <!-- Clause 9 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">09 / EXTERNAL CITATIONS</span>
                 <h2>9. Third-Party Links</h2>
                 <p>
-                    This Website may contain links to third-party websites for convenience. VQube Technologies does not control or endorse such external portals and is not responsible for their content, availability, or terms.
+                    This Website may contain outbound hyperlinks to third-party portals, technical resources, or software vendors for user convenience. VQube Technologies does not control, endorse, or assume responsibility for the content, privacy practices, or availability of external third-party websites.
                 </p>
             </div>
 
             <!-- Clause 10 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">10 / LIABILITY THRESHOLD</span>
                 <h2>10. Limitation of Liability</h2>
                 <p>
-                    To the maximum extent permitted by applicable law, VQube Technologies shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising from:
+                    To the maximum extent permitted by applicable law, VQube Technologies, its directors, employees, and associates shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising from:
                 </p>
                 <ul>
-                    <li>Use of or reliance upon this Website.</li>
-                    <li>Inability to access or utilize the Website.</li>
-                    <li>Reliance on general technical information published on the Website.</li>
-                    <li>Technical interruptions, server downtime, or errors.</li>
-                    <li>Third-party actions or content.</li>
+                    <li>The use of, or inability to access, this Website or its online forms.</li>
+                    <li>Reliance placed on general technical information or diagrams published on the Website.</li>
+                    <li>Unscheduled server downtime, network interruptions, or transmission errors.</li>
+                    <li>Actions taken by third-party hosting, telemetry, or software service providers.</li>
                 </ul>
             </div>
 
             <!-- Clause 11 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">11 / UPTIME POLICY</span>
                 <h2>11. Service Availability</h2>
                 <p>
-                    We strive to keep our Website available at all times but do not guarantee uninterrupted access. We reserve the right to modify, suspend, or discontinue any part of the Website without prior notice.
+                    While we make every effort to maintain continuous website uptime and accessibility, we do not warrant that access will be uninterrupted or error-free. VQube Technologies reserves the right to suspend, update, or discontinue any feature without prior notice.
                 </p>
             </div>
 
             <!-- Clause 12 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">12 / PRIVACY GOVERNANCE</span>
                 <h2>12. Privacy</h2>
                 <p>
-                    Your use of this Website is also governed by our <a href="privacy.html" style="color:var(--color-action-blue); text-decoration:underline;">Privacy Policy</a>. Please review our Privacy Policy for information regarding how we collect, use, and protect your personal information.
+                    Your use of this Website and submission of inquiries is concurrently governed by our official <a href="privacy.html" style="color:var(--color-action-blue); font-weight:500; text-decoration:underline;">Privacy Policy</a>. Please review the Privacy Policy to understand our practices regarding data collection, processing, and retention.
                 </p>
             </div>
 
             <!-- Clause 13 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">13 / STATUTORY JURISDICTION</span>
                 <h2>13. Governing Law & Jurisdiction</h2>
                 <p>
-                    These Terms & Conditions shall be governed by and interpreted in accordance with the laws of the <strong>Republic of India</strong>.
+                    These Terms & Conditions and any disputes arising out of or related to the use of this Website shall be governed by, and construed in accordance with, the laws of the <strong>Republic of India</strong>.
                 </p>
                 <p>
-                    Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the competent courts in <strong>Chennai, Tamil Nadu, India</strong>, unless otherwise formally agreed in writing.
+                    The competent courts located in <strong>Chennai, Tamil Nadu, India</strong> shall have exclusive legal jurisdiction over all proceedings or claims arising under these Terms, unless otherwise explicitly stipulated in an executed commercial contract.
                 </p>
             </div>
 
             <!-- Clause 14 -->
-            <div class="legal-clause-block">
+            <div class="legal-clause-block reveal-on-scroll">
                 <span class="mono-num">14 / AMENDMENTS</span>
                 <h2>14. Changes to These Terms</h2>
                 <p>
-                    VQube Technologies reserves the right to modify these Terms & Conditions at any time. Updated versions will be published on this Website accompanied by the revised effective date.
+                    VQube Technologies reserves the right to amend or replace these Terms & Conditions at any time. Any changes will be published directly on this page with an updated effective date. Your continued use of the Website following amendments constitutes acceptance of the modified Terms.
                 </p>
             </div>
         </div>
     </main>
 
-    <footer class="cohere-footer">
-        <div class="footer-top-grid">
-            <div class="footer-brand-col">
-                <a href="index.html">
-                    <img src="White Log.png" alt="VQube Technologies Logo">
-                </a>
-                <p style="color:var(--color-muted); font-size:14px; margin-top:8px;">
-                    Vector | Vision | Value &mdash; Engineering Excellence & Manpower Solutions.
-                </p>
+    <!-- ==========================================================================
+         APPLE MINIMALIST FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html">
+                        <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
+                    </a>
+                    <div class="footer-brand-tagline">Vector | Vision | Value</div>
+                    <p class="footer-brand-desc">
+                        Industrial Engineering Consulting, Numerical Simulation & Global Technical Manpower Solutions.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/company/vqubetechnologies" class="f-social-btn"
+                            aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://maps.app.goo.gl/tafZc8eqjrF6T3b89" class="f-social-btn" aria-label="Location"
+                            target="_blank" rel="noopener">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:infovqubetechnologies@gmail.com" class="f-social-btn" aria-label="Email">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>PAGES</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About VQube</a></li>
+                        <li><a href="index.html#services">Industry Services</a></li>
+                        <li><a href="index.html#capabilities">Capabilities</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>LEGAL & INFO</h4>
+                    <ul>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="Term.html" class="active">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>HEADQUARTERS</h4>
+                    <p style="color:var(--color-muted); font-size:14px; line-height:1.7;">
+                        Chennai, Tamil Nadu, India<br>
+                        <span style="white-space:nowrap;">Email: <a href="mailto:infovqubetechnologies@gmail.com" style="color:inherit; text-decoration:none;" onmouseover="this.style.color='var(--color-action-blue)'" onmouseout="this.style.color='inherit'">infovqubetechnologies@gmail.com</a></span><br>
+                        <span style="white-space:nowrap;">Phone: <a href="https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services." target="_blank" rel="noopener" style="color:inherit; text-decoration:none;" onmouseover="this.style.color='var(--color-action-blue)'" onmouseout="this.style.color='inherit'">+91 76048 52835</a></span>
+                    </p>
+                </div>
             </div>
 
-            <div class="footer-nav-col">
-                <h4>PAGES</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="Contact.html">Contact Us</a></li>
-                </ul>
+            <div class="footer-bottom-row">
+                <p>© 2026 VQube Technologies, All rights reserved.</p>
+                <p>Domain: <a href="https://vqubetechnologies.com" style="color:var(--color-primary); font-weight:500;">vqubetechnologies.com</a></p>
             </div>
-
-            <div class="footer-nav-col">
-                <h4>LEGAL</h4>
-                <ul>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="Term.html" style="color:#ffffff;">Terms & Conditions</a></li>
-                    <li><a href="sitemap.xml">XML Sitemap</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-nav-col">
-                <h4>HEADQUARTERS</h4>
-                <p style="color:var(--color-muted); font-size:14px; line-height:1.6;">
-                    Chennai, Tamil Nadu, India<br>
-                    Email: info@vqubetechnologies.com<br>
-                    Phone: +91 99622 93530
-                </p>
-            </div>
-        </div>
-
-        <div class="footer-bottom-row">
-            <p>© 2026 VQube Technologies, All rights reserved.</p>
-            <p>Domain: <a href="https://vqubetechnologies.com" style="color:#ffffff;">vqubetechnologies.com</a></p>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to top">
+        &uarr;
+    </button>
+
+    <!-- ==========================================================================
+         JAVASCRIPT LOGIC
+         ========================================================================== -->
+    <script>
+        // Scroll Progress Bar & Back to Top Visibility
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+
+            const backBtn = document.getElementById('backToTop');
+            if (winScroll > 300) {
+                backBtn.classList.add('show');
+            } else {
+                backBtn.classList.remove('show');
+            }
+        });
+
+        // Mobile Drawer Toggle
+        function toggleMobileDrawer() {
+            const drawer = document.getElementById('mobileDrawer');
+            if (drawer) {
+                const isOpen = drawer.classList.toggle('open');
+                if (isOpen) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+        }
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileDrawer);
+
+        // Progressive Scroll Reveal
+        function initScrollReveals() {
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            revealElements.forEach(el => observer.observe(el));
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollReveals();
+        });
+    </script>
 </body>
 
 </html>

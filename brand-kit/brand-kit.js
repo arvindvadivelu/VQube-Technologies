@@ -114,15 +114,15 @@ export const VideoPresets = {
     position: { top: 36, right: 48 },
     opacity: 0.88,
     maxHeight: 40,
-    assetPath: 'White Log.png'
+    assetPath: 'assets/images/White Log.png'
   }
 };
 
 export const BrandAssets = {
-  logoMain: 'Logo_with_Name_-removebg-preview.png',
-  logoWhite: 'White Log.png',
-  favicon: 'favicon.png',
-  qrCode: 'QR.png'
+  logoMain: 'assets/images/Logo_with_Name_-removebg-preview.png',
+  logoWhite: 'assets/images/White Log.png',
+  favicon: 'assets/images/favicon.png',
+  qrCode: 'assets/images/QR.png'
 };
 
 export const BRAND_KIT = {
