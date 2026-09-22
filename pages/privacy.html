@@ -17,7 +17,7 @@
 
     <!-- Canonical & Favicon -->
     <link rel="canonical" href="https://vqubetechnologies.com/privacy.html">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/images/favicon.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -44,40 +44,47 @@
 
     <style>
         /* ==========================================================================
-           1. APPLE MINIMALIST DESIGN SYSTEM TOKENS
+           1. META & MULTI-BRAND DESIGN SYSTEM TOKENS (Meta • Apple • Google • Notion)
            ========================================================================== */
         :root {
-            --color-primary: #1d1d1f;          /* Apple Charcoal Black */
-            --color-apple-black: #000000;      /* Absolute Pure Black */
-            --color-ink: #1d1d1f;              /* High-contrast body text */
-            --color-body-muted: #86868b;       /* Apple Secondary Gray */
-            --color-slate: #6e6e73;            /* Apple Tertiary Gray */
-            --color-muted: #86868b;            /* Metadata, subheadings */
-            --color-canvas: #ffffff;           /* Stark White Canvas */
-            --color-soft-stone: #f5f5f7;       /* Apple Signature Light Gray Surface */
-            --color-surface-subtle: #fbfbfd;   /* Subtle Apple off-white backdrop */
-            --color-card-border: rgba(0, 0, 0, 0.06); /* Ultra-clean subtle card border */
-            --color-hairline: #d2d2d7;         /* Apple Hairline Rule */
-            --color-border-light: #e5e5ea;     /* Clean Apple Divider */
-            --color-action-blue: #0071e3;      /* Apple Signature Interactive Blue */
-            --color-action-hover: #0077ed;     /* Apple Blue Hover */
-            --color-focus-blue: #0071e3;       /* Keyboard focus outline */
-            --color-pill-badge: rgba(0, 113, 227, 0.08); /* Apple Capsule Tint */
-            --color-dark-pro: #111113;         /* Apple Pro Space Black Surface */
+            /* Meta Brand & Electric Gradient Palette */
+            --meta-blue: #0064E0;              /* Meta Core Blue */
+            --meta-electric: #0081FB;          /* Meta Electric Highlight */
+            --meta-cyan: #00C6FF;              /* Meta Horizon Accent */
+            --meta-gradient: linear-gradient(135deg, #0668E1 0%, #0081FB 50%, #1877F2 100%);
+            --meta-glow: 0 8px 30px rgba(0, 100, 224, 0.28);
+
+            --color-primary: #050505;          /* Meta / Apple Deep Ink */
+            --color-apple-black: #000000;      /* Pure Black */
+            --color-ink: #1C2B33;              /* High-contrast body text */
+            --color-body-muted: #65676B;       /* Secondary Meta Gray */
+            --color-slate: #4A5568;            /* Tertiary Gray */
+            --color-muted: #8A8D91;            /* Metadata, subheadings */
+            --color-canvas: #ffffff;           /* Stark Canvas */
+            --color-soft-stone: #F0F2F5;       /* Meta Soft Background Surface */
+            --color-surface-subtle: #F8F9FA;   /* Subtle off-white backdrop */
+            --color-card-border: rgba(0, 0, 0, 0.08); /* Clean subtle card border */
+            --color-hairline: #d2d2d7;         /* Hairline Rule */
+            --color-border-light: #e4e6eb;     /* Clean Divider */
+            --color-action-blue: #0064E0;      /* Interactive Blue */
+            --color-action-hover: #0081FB;     /* Blue Hover */
+            --color-focus-blue: #0081FB;       /* Focus outline */
+            --color-pill-badge: rgba(0, 100, 224, 0.08); /* Capsule Tint */
+            --color-dark-pro: #0F172A;         /* Slate Black Surface */
             --color-on-primary: #ffffff;
             --color-on-dark: #ffffff;
 
             /* Typography */
-            --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+            --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
             --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
 
             /* Radii */
             --radius-xs: 6px;
             --radius-sm: 12px;
             --radius-md: 20px;
-            --radius-lg: 24px;
-            --radius-pill: 980px;
+            --radius-lg: 24px;                 /* Meta Horizon Bento Card Radius */
+            --radius-pill: 9999px;
             --radius-full: 9999px;
 
             /* Spacing */
@@ -85,8 +92,8 @@
             --space-container: 1040px;
 
             /* Transitions */
-            --transition-fast: 180ms cubic-bezier(0.25, 0.1, 0.25, 1);
-            --transition-base: 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            --transition-fast: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-base: 300ms cubic-bezier(0.16, 1, 0.3, 1);
             --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -211,23 +218,23 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            background: var(--color-action-blue);
+            background: var(--meta-gradient);
             color: #ffffff;
             font-family: var(--font-body);
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             padding: 10px 22px;
             border-radius: var(--radius-pill);
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(0, 113, 227, 0.24);
-            transition: background var(--transition-fast), transform var(--transition-fast);
+            box-shadow: 0 4px 16px rgba(0, 100, 224, 0.3);
+            transition: all var(--transition-fast);
             text-decoration: none;
         }
 
         .btn-primary:hover {
-            background: var(--color-action-hover);
-            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(0, 100, 224, 0.45);
+            transform: translateY(-2px);
         }
 
         .btn-secondary {
@@ -688,35 +695,87 @@
             gap: 16px;
         }
 
-        /* Back to top button */
-        #backToTop {
+
+
+        /* Floating WhatsApp Live Connect Widget (WhatsApp Multi-Brand System) */
+        .whatsapp-float-widget {
             position: fixed;
-            bottom: 28px;
+            bottom: 24px;
             right: 28px;
-            width: 44px;
-            height: 44px;
-            background: var(--color-primary);
+            z-index: 9998;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: all var(--transition-base);
+        }
+
+        .whatsapp-btn-circle {
+            width: 56px;
+            height: 56px;
+            background: #25D366;
             color: #ffffff;
-            border: none;
             border-radius: var(--radius-full);
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.38);
+            position: relative;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+        }
+
+        .whatsapp-btn-circle:hover {
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+            background: #20ba5a;
+        }
+
+        .whatsapp-pulse-ring {
+            position: absolute;
+            inset: -4px;
+            border-radius: var(--radius-full);
+            border: 2px solid #25D366;
+            opacity: 0.8;
+            animation: whatsappPulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        }
+
+        @keyframes whatsappPulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.25); opacity: 0; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+
+        .whatsapp-tooltip {
+            background: #1d1d1f;
+            color: #ffffff;
+            font-family: var(--font-body);
+            font-size: 13.5px;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+            pointer-events: none;
             opacity: 0;
-            visibility: hidden;
+            transform: translateX(8px);
             transition: all var(--transition-fast);
-            z-index: 999;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
-        #backToTop.show {
+        .whatsapp-tooltip::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: #25D366;
+            border-radius: var(--radius-full);
+            display: inline-block;
+        }
+
+        .whatsapp-float-widget:hover .whatsapp-tooltip {
             opacity: 1;
-            visibility: visible;
-        }
-
-        #backToTop:hover {
-            background: var(--color-action-blue);
+            transform: translateX(0);
         }
 
         /* ==========================================================================
@@ -762,7 +821,7 @@
     <header class="site-nav" id="siteNav">
         <div class="nav-grid">
             <a href="index.html" class="brand-logo" aria-label="VQube Technologies Home">
-                <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
+                <img src="../assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
             </a>
 
             <nav>
@@ -796,7 +855,7 @@
         <div class="mobile-drawer" id="mobileDrawer">
             <div class="mobile-drawer-header">
                 <a href="index.html" onclick="toggleMobileDrawer()" class="brand-logo" aria-label="VQube Technologies Home">
-                    <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo" style="height:40px; width:auto;">
+                    <img src="../assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo" style="height:40px; width:auto;">
                 </a>
                 <button class="mobile-drawer-close" onclick="toggleMobileDrawer()" aria-label="Close Navigation Menu">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
@@ -987,7 +1046,7 @@
             <div class="footer-top-grid">
                 <div class="footer-brand-col">
                     <a href="index.html">
-                        <img src="assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
+                        <img src="../assets/images/Logo_with_Name_-removebg-preview.png" alt="VQube Technologies Logo">
                     </a>
                     <div class="footer-brand-tagline">Vector | Vision | Value</div>
                     <p class="footer-brand-desc">
@@ -1046,7 +1105,7 @@
                 <div class="footer-nav-col">
                     <h4>HEADQUARTERS</h4>
                     <p style="color:var(--color-muted); font-size:14px; line-height:1.7;">
-                        Chennai, Tamil Nadu, India<br>
+                        Chennai, Tamil Nadu 600015, India<br>
                         <span style="white-space:nowrap;">Email: <a href="mailto:infovqubetechnologies@gmail.com" style="color:inherit; text-decoration:none;" onmouseover="this.style.color='var(--color-action-blue)'" onmouseout="this.style.color='inherit'">infovqubetechnologies@gmail.com</a></span><br>
                         <span style="white-space:nowrap;">Phone: <a href="https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services." target="_blank" rel="noopener" style="color:inherit; text-decoration:none;" onmouseover="this.style.color='var(--color-action-blue)'" onmouseout="this.style.color='inherit'">+91 76048 52835</a></span>
                     </p>
@@ -1060,28 +1119,30 @@
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to top">
-        &uarr;
-    </button>
+
+
+    <!-- Floating WhatsApp Live Support Widget (WhatsApp Multi-Brand System) -->
+    <a href="https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services." 
+       target="_blank" rel="noopener" class="whatsapp-float-widget" aria-label="Chat on WhatsApp with VQube Technologies">
+        <span class="whatsapp-tooltip">Chat with Advisory</span>
+        <div class="whatsapp-btn-circle">
+            <div class="whatsapp-pulse-ring"></div>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.971.53 1.956.812 2.796.813 3.186 0 5.772-2.586 5.772-5.766 0-3.18-2.586-5.767-5.772-5.767zm0-2.172c4.382 0 7.969 3.587 7.969 7.969 0 4.381-3.587 7.969-7.969 7.969-1.29 0-2.502-.317-3.571-.875l-4.46 1.168 1.189-4.344c-.66-1.127-1.027-2.428-1.027-3.918 0-4.382 3.587-7.969 7.969-7.969zm3.565 11.288c-.149-.074-.882-.435-1.019-.485-.136-.049-.235-.074-.334.075-.099.149-.383.485-.47.584-.086.1-.173.111-.322.037-.149-.074-.627-.231-1.194-.737-.442-.394-.74-.881-.827-1.029-.086-.149-.009-.229.065-.303.067-.067.149-.173.223-.26.074-.086.099-.149.149-.248.05-.099.025-.185-.012-.26-.037-.074-.334-.805-.458-1.103-.121-.29-.244-.251-.334-.256-.086-.004-.185-.005-.285-.005-.099 0-.26.037-.396.185-.136.149-.52.508-.52 1.239s.533 1.436.607 1.535c.074.099 1.05 1.603 2.544 2.248 1.494.646 1.494.431 1.767.404.272-.027.882-.36 1.006-.708.124-.347.124-.645.086-.708-.037-.062-.136-.099-.285-.173z"/>
+            </svg>
+        </div>
+    </a>
 
     <!-- ==========================================================================
          JAVASCRIPT LOGIC
          ========================================================================== -->
     <script>
-        // Scroll Progress Bar & Back to Top Visibility
+        // Scroll Progress Bar
         window.addEventListener('scroll', () => {
             const winScroll = document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progressBar').style.width = scrolled + '%';
-
-            const backBtn = document.getElementById('backToTop');
-            if (winScroll > 300) {
-                backBtn.classList.add('show');
-            } else {
-                backBtn.classList.remove('show');
-            }
         });
 
         // Mobile Drawer Toggle

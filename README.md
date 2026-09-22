@@ -50,20 +50,23 @@ VQube-Technologies/
 ├── assets/
 │   └── images/              # Consolidated brand, service & gallery imagery
 ├── brand-kit/               # Design tokens, brand styles & metadata
+├── config/                  # Deployment scripts, sitemaps, robots & license
+│   ├── LICENSE              # License file
+│   ├── merge.bat            # Merge development -> main deployment script
+│   ├── push.bat             # Auto-push to development branch
+│   ├── robots.txt           # Crawler instructions
+│   └── sitemap.xml          # XML sitemap
 ├── docs/                    # Architectural specifications & DNS records
 │   ├── description.md       # Master Architecture & Content Specification
 │   ├── PROJECT.md           # Project Architecture & Context documentation
 │   ├── context.md           # Business domain notes
 │   └── zone-file-*.txt      # Production DNS zone reference
-├── index.html               # Production Homepage (Apple Bento Design)
-├── Contact.html             # Executive Contact & Consultation Desk
-├── Term.html                # Terms & Conditions Legal Agreement
-├── privacy.html             # Privacy Policy & Data Protection
-├── push.bat                 # One-click Git deployment automation
-├── robots.txt               # Search engine crawler directives
-├── sitemap.xml              # Production XML sitemap
-├── LICENSE                  # MIT License
-└── GEMINI.md                # Agent directives & behavior guidelines
+├── pages/                   # Production HTML website files (Apple Bento Design)
+│   ├── Contact.html         # Executive Contact & Consultation Desk
+│   ├── index.html           # Master Homepage
+│   ├── privacy.html         # Privacy Policy & Data Protection
+│   └── Term.html            # Terms & Conditions Legal Agreement
+└── README.md                # Only file at root level
 ```
 
 ---
@@ -76,16 +79,16 @@ git clone https://github.com/arvindvadivelu/VQube-Technologies.git
 cd VQube-Technologies
 
 # Run locally with any static server
-npx serve .
+npx serve pages/
 # or
-python -m http.server 8000
+python -m http.server -d pages 8000
 ```
 
 ---
 
 ## Contact & Headquarters
 
-- **Headquarters**: 226/1A2, Ground Floor, Nehru Street, Alappakkam, Chengalpattu, Chennai, Tamil Nadu 603003, India
+- **Headquarters**: Chennai, Tamil Nadu 600015, India
 - **Head of Engineering**: Vadivelu Dhamodharan — [LinkedIn](https://www.linkedin.com/in/vadiveludhamodharan)
 - **Direct Mail**: [infovqubetechnologies@gmail.com](mailto:infovqubetechnologies@gmail.com)
 - **WhatsApp Direct**: [+91 76048 52835](https://wa.me/917604852835?text=Hello%20VQube%20Technologies%2C%20I%20would%20like%20to%20inquire%20about%20engineering%20consulting%20services.)

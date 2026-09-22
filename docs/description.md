@@ -6,7 +6,7 @@
 > **Official Taglines**: "Engineering Excellence & Man Power Solutions" | "Vector | Vision | Value"  
 > **Primary Contact Email**: `infovqubetechnologies@gmail.com`  
 > **Official Phone / WhatsApp**: `+91 76048 52835` (`https://wa.me/917604852835`)  
-> **Headquarters**: 226/1A2, Ground Floor, Nehru Street, Alappakkam, Chengalpattu, Chennai, Tamil Nadu 603003, India  
+> **Headquarters**: Chennai, Tamil Nadu 600015, India  
 > **Design Framework**: Apple Minimalist White Space Design System  
 
 ---

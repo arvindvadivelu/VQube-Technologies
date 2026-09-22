@@ -1,7 +1,7 @@
 # VQube Technologies - Project Context & Architecture
 
 > **Domain**: [vqubetechnologies.com](https://vqubetechnologies.com/)  
-> **Headquarters**: Chennai, Tamil Nadu, India  
+> **Headquarters**: Chennai, Tamil Nadu 600015, India  
 > **Contact**: infovqubetechnologies@gmail.com | +91 76048 52835  
 > **Industry**: Industrial Engineering Consulting, Plant Design, CFD/FEA Simulation & Global Technical Manpower Solutions
 
@@ -43,22 +43,26 @@ VQube Technologies/
 │   ├── brand-kit.js                      # Dynamic Brand Kit helper script
 │   └── brand-kit.json                    # Centralized JSON brand tokens and metadata
 │
+├── config/                               # Deployment scripts, sitemaps, robots & license
+│   ├── LICENSE                           # License file
+│   ├── merge.bat                         # Merge development -> main deployment script
+│   ├── push.bat                          # Auto-push to development branch
+│   ├── robots.txt                        # Search engine crawling rules
+│   └── sitemap.xml                       # XML Sitemap with priority & update frequencies
+│
 ├── docs/                                 # Architectural specifications & DNS records
 │   ├── description.md                    # Master Architecture & Content Specification
 │   ├── PROJECT.md                        # Complete project context & architectural documentation
 │   ├── context.md                        # Business domain context notes
 │   └── zone-file-vqubetechnologies-com.txt # Production DNS zone configuration records
 │
-├── Contact.html                          # Dedicated Contact & Consultation Request page
-├── index.html                            # Master Production Homepage (Apple Bento Design)
-├── privacy.html                          # Privacy Policy legal page
-├── Term.html                             # Terms & Conditions legal page
-├── README.md                             # Official corporate GitHub repository README
-├── push.bat                              # One-click Git deployment script to GitHub main branch
-├── robots.txt                            # Search engine crawling rules
-├── sitemap.xml                           # XML Sitemap with priority & update frequencies
-├── LICENSE                               # MIT License
-└── GEMINI.md                             # Global Agent Directives & Behavior Guidelines
+├── pages/                                # Production HTML website files (Apple Bento Design)
+│   ├── Contact.html                      # Dedicated Contact & Consultation Request page
+│   ├── index.html                        # Master Production Homepage (Apple Bento Design)
+│   ├── privacy.html                      # Privacy Policy legal page
+│   └── Term.html                         # Terms & Conditions legal page
+│
+└── README.md                             # Repository master overview & quick start
 ```
 
 ---
