@@ -1,0 +1,32 @@
+# ==============================================================================
+# VQube Technologies (VQT) - AI-SEO & Search Engine Crawl Policy
+# https://vqubetechnologies.com/
+# ==============================================================================
+
+# Default Search Engines (Google, Bing, Yahoo, DuckDuckGo)
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /admin/
+
+# Explicitly Allow Major AI Search & Answer Engines (LLM Citations & Retrieval)
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot-Extended
+Allow: /
+
+# Disallow Bulk Training-Only Scrapers (Protects Bandwidth While Preserving Citations)
+User-agent: CCBot
+User-agent: Bytespider
+Disallow: /
+
+# Sitemap & Machine-Readable AI Knowledge Bundles
+Sitemap: https://vqubetechnologies.com/sitemap.xml
+# AI Context Specifications (llmstxt.org)
+# llms-txt: https://vqubetechnologies.com/llms.txt
+# llms-full: https://vqubetechnologies.com/llms-full.txt

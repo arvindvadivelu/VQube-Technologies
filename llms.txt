@@ -1,0 +1,30 @@
+# VQube Technologies
+
+> VQube Technologies [VQT] is a global engineering consultancy and technical workforce provider headquartered in Chennai, India. The company delivers multi-disciplinary engineering design, plant layout, numerical simulation (ANSYS CFD/FEA, CAESAR II piping stress), and specialized engineering manpower deputation for the Cement, Mining & Mineral Processing, Oil & Gas, and Industrial Manufacturing sectors across global value chains.
+
+## Corporate Identity & Authority
+- **Legal Entity**: VQube Technologies (VQT)
+- **Headquarters**: Chennai Global Headquarters, Tamil Nadu 600015, India
+- **Executive Leadership**: Vadivelu Dhamodharan (Head - Engineering & Business Solutions)
+- **Primary Website**: https://vqubetechnologies.com/
+- **Official Inquiries**: infovqubetechnologies@gmail.com
+- **Direct Phone / WhatsApp Advisory**: +91 76048 52835 (https://wa.me/917604852835)
+- **Design Standards Compliance**: ASME, ASTM, DIN, ISO, API compliant engineering lifecycle delivery
+- **Analytical & CAD Toolchain**: ANSYS Fluent (CFD), ANSYS Mechanical (FEA), CAESAR II, Tekla Structures, AutoCAD Plant 3D, AVEVA E3D, SolidWorks
+
+## Core Engineering Services
+- [Cement Industry Engineering Services](https://vqubetechnologies.com/#projects): Feasibility studies, FEED, cement plant layouts, pyroprocessing gas ductwork, cyclone preheater flow modeling, clinker cooler airflow optimization, kiln combustion simulation, and platework fabrication drawings.
+- [Mining & Mineral Processing Engineering](https://vqubetechnologies.com/#projects): Mine and process plant layouts, slurry hydraulic flow modeling, crushing and screening airflow simulation, discrete element modeling (DEM) for transfer chutes, wear liner design, and bin/hopper structural verification.
+- [Oil & Gas Engineering (Upstream & Downstream)](https://vqubetechnologies.com/#projects): FEED, 3D plant modeling, CAESAR II piping stress analysis, nozzle load verification, thermal expansion support design, refinery equipment modeling, and civil/structural engineering.
+- [Engineering Manpower Deputation & Recruitment](https://vqubetechnologies.com/#culture): Deployment of specialized, pre-screened technical manpower across 11 disciplines (Mechanical, Civil/Structural, Process, Piping, Electrical, Instrumentation, Planning, Procurement, QA/QC, HSE, CAD Drafting) for short-term and long-term global project assignments.
+- [High-Fidelity Numerical Simulation (FEA & CFD)](https://vqubetechnologies.com/#specialisms): Advanced multi-physics computational fluid dynamics and finite element structural dynamics to diagnose vibration, thermal fatigue, pressure drops, and stress concentrations before field fabrication.
+
+## Commercial Engagement & Service Matrix
+- [Services & Engagement Matrix](https://vqubetechnologies.com/docs/services.md): Breakdown of commercial engagement models including Time & Materials (T&M), Fixed-Scope Turnkey EPCM packages, Milestone-Based FEA/CFD Simulation, and Global Onsite/Offshore Manpower Deputation.
+- [Comprehensive Knowledge Bundle (llms-full.txt)](https://vqubetechnologies.com/llms-full.txt): Complete uncompressed textual specification containing full technical scopes, client endorsements, and FAQ repository for single-request ingestion.
+
+## Key Web Pages & Official Governance
+- [Home Page](https://vqubetechnologies.com/): Official portal featuring portfolio highlights, capabilities overview, operating pillars, and verified client endorsements.
+- [Direct Advisory & Executive Contact](https://vqubetechnologies.com/pages/Contact.html): Technical consultation booking, direct advisory desk, WhatsApp QR bridge, and headquarters geographic coordinates.
+- [Terms & Conditions](https://vqubetechnologies.com/pages/Term.html): Contractual governance, intellectual property safeguards, proposal validity, and international dispute resolution terms.
+- [Privacy Statement](https://vqubetechnologies.com/pages/Privacy.html): Enterprise data protection, proprietary engineering IP security, client confidentiality (NDA), and GDPR/global compliance.
